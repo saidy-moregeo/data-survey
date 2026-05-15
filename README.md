@@ -34,6 +34,7 @@ The following data has been surveyed:
 - [The Netherlands](data/NL.md)
 - [Norway: AR50 Agricultural land](data/NO.md)
 - [Portugal](data/PT.md)
+- [Romania (cross-border land cover)](data/RO.md)
 - [Slovakia](data/SK.md)
 - [Slovenia](data/SI.md)
 - [Spain (national SIGPAC, 2025+)](data/ES.md)
@@ -54,6 +55,7 @@ The following data has been surveyed:
 - [País Vasco (Basque Country), Spain](data/ES-PV.md)
 - [Sweden](data/SE.md)
 - [Switzerland](data/CH.md)
+- [United Kingdom — UKFields (Fiboa-UK)](data/UK.md)
 
 ### Europe-wide
 
@@ -64,8 +66,7 @@ The following data has been surveyed:
 
 - [West Bahia, Brazil (LEM)](data/BR-BA-LEM.md)
 - [Brazil Crop Fields (CONAB)](data/BR-CONAB.md)
-- [USDA Crop Sequence Boundaries (2022)](data/US.md)
-- [U.S. Department of Agriculture Crop Sequence Boundaries](data/US-USDA-CropLand.md)
+- [USDA Crop Sequence Boundaries](data/US-USDA-CropLand.md)
 - [California (US) Statewide Crop Mapping](data/US-CA-SCM.md)
 
 ### Asia
