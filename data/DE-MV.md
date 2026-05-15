@@ -19,16 +19,16 @@ classifications (wind and water).
 - **URL:** https://www.geodaten-mv.de/dienste/gdimv_feldblock_wfs (WFS, shape-zip output)
 - **Documentation:** https://www.geodaten-mv.de/dienste/feldblock_atom?type=dataset&id=f18122c4-2585-4c22-9c48-9e960e8dhd34
 - **File Format:** ESRI Shapefile (via WFS shape-zip)
-- **Projection:** WFS native (German state CRS; reprojection handled by the converter)
+- **Projection:** WFS native (German state CRS)
 - **License:** No restrictions apply (see Atom feed)
 
 ### Properties
 
 | Property   | Data Type | Constraints                                       | Description                                           |
 |------------|-----------|---------------------------------------------------|-------------------------------------------------------|
-| fbid       | string    | FLIK pattern `DEMVLI…` (FLIK extension)           | Field block identifier (FLIK)                         |
+| fbid       | string    | FLIK pattern `DEMVLI…`                            | Field block identifier (FLIK)                         |
 | dgl_jahr   | int16     |                                                   | Permanent-grassland year (DGL Jahr)                   |
-| bodennutzu | string    | mapped via `de/de_mv.csv` crop code list          | Land use / crop code (Bodennutzungsart)               |
+| bodennutzu | string    |                                                   | Land use / crop code (Bodennutzungsart)               |
 | bez_kreis  | string    |                                                   | District name (Kreisbezeichnung)                      |
 | groesse_p  | number    | hectares                                          | Productive (net) area of the block                    |
 | perimeter  | number    | metres                                            | Polygon perimeter                                     |

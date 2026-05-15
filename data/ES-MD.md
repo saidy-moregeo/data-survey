@@ -1,28 +1,26 @@
-# Comunidad de Madrid Crop Fields
+# Comunidad de Madrid, Spain
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Comunidad de Madrid
-- **Homepage:** https://www.comunidad.madrid/
+- **Data Provider (Legal Entity):** Comunidad de Madrid (Government)
+- **Homepage:** https://www.comunidad.madrid
 
 ## Overview
 
-SIGPAC is the Agricultural Parcel Identification System implemented throughout the European Union for the application of CAP (Common Agricultural Policy) aid to farmers and ranchers.
+SIGPAC (Sistema de Información Geográfica de la Política Agrícola Común, the Geographical Information System for Common Agricultural Policy) is the Agricultural Parcel Identification System implemented throughout the European Union for the application of CAP aid to farmers and ranchers. SIGPAC is configured as a database containing digitised cartographic images of the entire national territory (aerial orthoimages) and a geographic delimitation of each plot of land with its individual reference and the attributes corresponding to its geometry and agricultural use.
 
-SIGPAC is configured as a database containing digitalized cartographic images of the entire national territory (aerial orthoimages) and a geographic delimitation of each plot of land with its individual reference and the attributes corresponding to its geometry and agricultural use.
+This dataset contains the SIGPAC enclosures (RECINTO) for the Comunidad de Madrid for the 2024 campaign, distributed as a single regional shapefile bundle.
 
 ## Data
 
-- **URL:** https://idem.comunidad.madrid/catalogocartografia/srv/spa/catalog.search#/metadata/spacm_atom_sigpac
+- **URL:** https://idem.comunidad.madrid/recursos_cat_geo/Catalogo/recursos/UsoDelSuelo/spacm_sigpac.cm.zip (single regional ZIP containing `2024_SIGPAC_shape_toda_la_com/RECINTO.shp`)
 - **Documentation:** https://www.comunidad.madrid/servicios/medio-rural/sigpac
-- **File Format:** Shapefile
-- **Projection:** EPSG:4258 (ETRS89 geographic coordinates))
-- **License:** [No Limitations to public access](https://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/noLimitations) as documented at source https://idem.comunidad.madrid/catalogocartografia/srv/spa/catalog.search#/metadata/spacm_sigpac
+- **File Format:** Shapefile (distributed as ZIP)
+- **Projection:** EPSG:4258 (ETRS89 geographic)
+- **License:** [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/) (No limitations to public access; see https://idem.comunidad.madrid/catalogocartografia/srv/spa/catalog.search#/metadata/spacm_sigpac)
 
-License;  No limitations to public access
-The use, graphic delimitation or other attributes of the enclosures that appear in the SIGPAC are intended to make it easier for farmers to complete their application for CAP aid. When the use that appears in the SIGPAC is different from the actual use, farmers must make their application for aid based on the latter, the actual use, and must report the incident to the competent service of their Autonomous Community.
-https://www.fega.gob.es/orig/pdfs/20230627-MESA-SGC-Acuerdo-Distribuci%C3%B3n-Datos-SIGC_ES_FIRMADO.pdf
+The published surface (`DN_SURFACE`) is in square metres.
 
 ### Properties
 

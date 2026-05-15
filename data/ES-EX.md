@@ -1,31 +1,27 @@
-# SIGPAC Extremadura
+# Extremadura, Spain
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Junta de Extremadura - Consejería de Infraestructuras, Transporte y Vivienda
+- **Data Provider (Legal Entity):** Junta de Extremadura (Government)
 - **Homepage:** https://www.juntaex.es/lajunta/consejeria-de-infraestructuras-transporte-y-vivienda
 
 ## Overview
 
-Layer relating to enclosures, which constitute a continuous surface of land, within a plot, with the same agricultural use.
+This dataset contains the SIGPAC (Sistema de Información Geográfica de la Política Agrícola Común, the Geographical Information System for Common Agricultural Policy) reference enclosures (Recintos) for the autonomous community of Extremadura. SIGPAC is a public administrative register created through collaboration between the Spanish Agricultural Guarantee Fund (FEGA) and the different Autonomous Communities that contains the parcels that may benefit from CAP aid related to the surface area, providing graphic support for the enclosures with defined agricultural uses.
 
-SIGPAC is the Geographic Information System for the Identification of Agricultural Plots , 
-created through collaboration between the Spanish Agricultural Guarantee Fund (FEGA) and 
-the different Autonomous Communities, within the scope of their territories, as an element 
-of the Integrated Management and Control System of the direct aid regimes. It has the character 
-of a public register of administrative profile, and contains updated information on the 
-plots that may benefit from community aid related to the surface area, providing graphic 
-support for these and their subdivisions (ENCLOSURES) with defined agricultural uses or 
-developments.
+The data is published on the Junta de Extremadura download portal (SITEX, subcategory 45) as one shapefile per municipality per campaign year.
 
 ## Data
 
-- **URL:** http://sitex.gobex.es/SITEX/centrodescargas/viewsubcategoria/45
-- **File Format:** Shapefile
-- **Projection:** EPSG:4258
-- **License:** CC-BY 4.0 See http://sitex.gobex.es/SITEX/files/CondicionesUsoCICTEX.pdf
+- **URL:** http://sitex.gobex.es/SITEX/centrodescargas/viewsubcategoria/45 (per-municipality archives, year selectable)
+- **Documentation:** http://sitex.gobex.es/SITEX/files/CondicionesUsoCICTEX.pdf
+- **File Format:** Shapefile (per municipality, distributed as ZIP)
+- **Projection:** EPSG:4258 (ETRS89 geographic)
+- **License:** [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) (see [CondicionesUsoCICTEX.pdf](http://sitex.gobex.es/SITEX/files/CondicionesUsoCICTEX.pdf))
 - **Attribution:** Junta de Extremadura
+
+The published surface (`dn_surface`) is in square metres.
 
 ### Properties
 

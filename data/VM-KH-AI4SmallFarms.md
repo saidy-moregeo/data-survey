@@ -1,51 +1,27 @@
-# AI4SmallFarms: A Dataset for Crop Field Delineation in Southeast Asian Smallholder Farms
+# AI4SmallFarms: Field boundaries for Cambodia and Vietnam
 
 ## Submission Details
 
-- **Submitter (Affiliation):** Snehal Chaudhari, ASU.
-- **Data Provider (Legal Entity):** 
-   - Prof. Dr. Ir. C Persello (University of Twente, Faculty of Geo-Information Science and Earth Observation (ITC))
-   - J Grift (University of Twente, Faculty of Geo-Information Science and Earth Observation (ITC))
-   - Dr. X Fan (Delft University of Technology (TU Delft))
-   - Dr. Ir. C Paris (University of Twente, Faculty of Geo-Information Science and Earth Observation (ITC))
-   - Dr. R Hänsch (German Aerospace Center (DLR))
-   - Dr. M. N. Koeva (University of Twente, Faculty of Geo-Information Science and Earth Observation (ITC))
-   - Prof. Dr. A Nelson (University of Twente, Faculty of Geo-Information Science and Earth Observation (ITC))
-- **Homepage:** https://easy.dans.knaw.nl/ui/datasets/id/easy-dataset:321745
+- **Submitter (Affiliation):** Snehal Chaudhari, ASU
+- **Data Provider (Legal Entity):** DATA Archiving and Networked Services (DANS) / Persello et al., University of Twente ITC, TU Delft, DLR (Research)
+- **Homepage:** https://research.tudelft.nl/en/publications/ai4smallfarms-a-dataset-for-crop-field-delineation-in-southeast-a
 
 ## Overview
 
-This repository contains an open data set for training and benchmarking machine learning methods to delineate agricultural field boundaries in polygon format. The large-scale data set consists of 439,001 field polygons divided into 62 tiles of approximately 5x5 km distributed across Vietnam and Cambodia, covering a range of fields and diverse landscape types.
+Agricultural field polygons within smallholder farming systems are essential to facilitate the collection of geo-spatial data useful for farmers, managers, and policymakers. However, the limited availability of training labels poses a challenge in developing supervised methods to accurately delineate field boundaries using Earth Observation (EO) data.
+
+This data set allows researchers to test and benchmark machine-learning methods to delineate agricultural field boundaries in polygon format. The large-scale data set consists of 439,001 field polygons divided into 62 tiles of approximately 5×5 km distributed across Vietnam and Cambodia, covering a range of fields and diverse landscape types. The field polygons have been meticulously digitized from satellite images, following a rigorous multi-step quality control process and topological consistency checks. Multi-temporal composites of Sentinel-2 (S2) images are provided to ensure cloud-free data.
 
 ## Data
 
-<!-- Any important information about your field boundary data and metadata,
-e.g. in which format and projection the geometry is provided. -->
-
-- **URL:** https://doi.org/10.17026%2Fdans-xy6-ngg6
-- **Documentation:** https://easy.dans.knaw.nl/ui/datasets/id/easy-dataset:321745/tab/1
+- **URL:** Per-tile GeoPackages hosted on the DANS data station (https://phys-techsciences.datastations.nl), one file per tile (e.g. `2_cambodia_areas.gpkg`, `0_vietnam_areas.gpkg`). 33 Cambodia tiles and 29 Vietnam tiles are available.
+- **Documentation:** https://research.tudelft.nl/en/publications/ai4smallfarms-a-dataset-for-crop-field-delineation-in-southeast-a
 - **File Format:** GeoPackage
-- **Projection:** EPSG:32648
-- **License:** [CC BY 4.0](http://creativecommons.org/licenses/by/4.0)
-- **Data Creation Details:** The field polygons were meticulously digitized using S2 and GM images.For each tile, all the visible crops were manually digitized. 
-
-The data is origanized as follows: 
-```
-	- sentinel-2-asia/ (dataset with tiles from Vietnam and Cambodia)
-		- reference/ (lines and area representations of the reference boundaries)
-		- test/ (test images, masks and predictions)
-		- train/ (train images and masks)
-		- validate/ (validate images and masks)
-		- tiles_asia.gpkg
-		- benchmark.qgz (QGIS project with all the previously described data)
-	- README.md
-```
-...
+- **Projection:** EPSG:32648 (UTM 48N)
+- **License:** [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Attribution / Citation:** Persello, C., Grift, J., Fan, X., Paris, C., Hansch, R., Koeva, M., & Nelson, A. (2023). AI4SmallFarms: A Dataset for Crop Field Delineation in Southeast Asian Smallholder Farms. *IEEE Geoscience and Remote Sensing Letters*, 20, 1-5. Article 2505705. https://doi.org/10.1109/LGRS.2023.3323095
 
 ### Properties
-
-<!-- A list of properties with e.g. a short description, data type, constraints such as value range or allowed values, etc. This can be found by opening the data file in qgis, then 
-   right clicking on the layer and selecting 'layer properties', and then going to the 'fields' section. The 'name' in qgis is the property in this table, and the 'Type name' is the Data Type -->
 
 Fields in tiles_asia.gpkg
 | Property    | Data Type | Constraints | Description                     |

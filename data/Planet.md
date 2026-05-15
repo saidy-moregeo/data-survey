@@ -1,26 +1,23 @@
-# Planet Field Boundaries
+# Planet Automated Field Boundaries
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Matej Batič, Planet Labs
-- **Data Provider (Legal Entity):** Planet Labs PBC
-- **Homepage:** https://area-monitoring.sinergise.com/docs/markers/field-delineation/
+- **Data Provider (Legal Entity):** Planet Labs PBC (Company)
+- **Homepage:** https://www.planet.com
 
 ## Overview
 
-The field delineation marker produces boundaries of the agricultural parcels by clustering the agricultural pixels according to spatial, spectral and temporal properties. The delineated boundaries can aid the farmers speed up the declaration process and the paying agencies to better monitor changes in agricultural use. 
+These field boundaries are created by Planet Labs, using an automated process based on satellite imagery. The algorithm works on a monthly basis and is available for the entire globe. The data is provided in GeoPackage format. For more information, see the [field boundaries technical specification](https://planet.widen.net/s/5vq8w5wjvf/2403.08_mar-9444-field-boundaries-technical-specification-sheet-3).
 
 ## Data
 
-- **URL:** n/a 
-- **Documentation:** https://medium.com/sentinel-hub/automatic-field-delineation-new-release-1c2938399f0
+- **Data access:** Data must be obtained from the Planet subscriptions API — see https://developers.planet.com/docs/planetary-variables/field-boundaries/. The output is a GeoPackage with a file name such as `FIELD_BOUNDARIES_v1.0.0_S2_P1M-20230101T000000Z_fb.gpkg`. The filename contains the acquisition timestamp (`-YYYYMMDDTHHMMSSZ_fb.gpkg`).
+- **Documentation:** https://developers.planet.com/docs/planetary-variables/field-boundaries/
 - **File Format:** GeoPackage
 - **Projection:** EPSG:4326
-- **License:** Commercial
-- **Data Creation Details:** output of deep learning model
-- **Computer Vision / AI Details:**  We use a deep neural network based on the popular U-net architecture to estimate the parcel’s extent, boundary, and the distance of the segmented image pixels to the boundary. We added a super-resolution layer to our U-net architecture to produce estimates of extent and boundaries at 4x the input image resolution: given the four B02, B03, B04, and B08 Sentinel-2 bands at 10 m pixel size, the network estimates parcel boundaries at 2.5 m. 
-
-
+- **License:** [Planet Proprietary License](https://www.planet.com/licensing-information/)
+- **Attribution:** © 2024 Planet Labs, PBC
 
 ### Properties
 
@@ -37,4 +34,3 @@ The field delineation marker produces boundaries of the agricultural parcels by 
 ### Example
 
 https://devext.sinergise.com/parcelio/
-

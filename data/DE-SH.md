@@ -4,23 +4,23 @@
 
 - **Submitter (Affiliation):** Matthias Mohr
 - **Data Provider (Legal Entity):** Land Schleswig-Holstein (Government)
-- **Homepage:** https://sh-mis.gdi-sh.de/catalog/?lang=de#/datasets/iso/21f67269-780f-4f3c-8f66-03dde27acfe7
+- **Homepage:** https://sh-mis.gdi-sh.de/catalog/#/datasets/iso/21f67269-780f-4f3c-8f66-03dde27acfe7
 
 ## Overview
 
-Field blocks in Schleswig-Holstein.
+Schleswig-Holstein publishes the open field-block ("Feldblock") dataset of the Feldblockfinder, the area reference used in the Integrated Administration and Control System (IACS) for EU agricultural subsidies. A field block is a contiguous agricultural area surrounded by permanent boundaries, which is cultivated by one or more farmers with one or more crops, is fully or partially set aside or is fully or partially taken out of production.
 
-## Data & Metadata
+## Data
 
 - **URL:**
   - GeoPackage: https://service.gdi-sh.de/SH_OpenGBD/feeds/Atom_SH_Feldblockfinder_OpenGBD/data/Feldbloecke_2024_GPKG.zip
   - Shapefile: https://service.gdi-sh.de/SH_OpenGBD/feeds/Atom_SH_Feldblockfinder_OpenGBD/data/Feldbloecke_2024_SHP.zip
-- **Documentation:** no direct link. visit homepage, click "PDF herunterladen"
-- **File Format:** Shapefile / GeoPackage
-- **Geometry Format (if different from data):** -
-- **Metadata Format (if different from data):** INSPIRE
-- **Projection:** EPSG:25832 (UTM 32N) or EPSG:4258 (ETRS89)
-- **License:** [Deutschland – Zero – Version 2.0](https://www.govdata.de/dl-de/zero-2-0)
+- **Documentation:** see the dataset page on the homepage ("PDF herunterladen")
+- **File Format:** GeoPackage and Shapefile
+- **Projection:** as published (EPSG:25832, UTM 32N; alternative EPSG:4258 / ETRS89)
+- **License:** [Datenlizenz Deutschland – Zero – Version 2.0](https://www.govdata.de/dl-de/zero-2-0)
+
+The `Flaeche` column is in hectares.
 
 ### Properties
 
@@ -35,15 +35,16 @@ Field blocks in Schleswig-Holstein.
 | SHAPE_LEN  | number    | > 0         | Shapefile only: Length of the shape (i.e. boundary) in meters |
 
 Values for `HBN`:
+
 - `Ackerland` (arable land)
 - `Dauerkultur` (permanent crops)
 - `Dauergrünland` (permanent grassland)
-- `Nicht landwirtschaftliche förderfähige Flächen` (Areas not eligible for agricultural subsidies)
-- `Sonstige nicht ldw. genutzte Flächen` (Other non-agricultural land)
+- `Nicht landwirtschaftliche förderfähige Flächen` (areas not eligible for agricultural subsidies)
+- `Sonstige nicht ldw. genutzte Flächen` (other non-agricultural land)
 
 ## API
 
 | Standard | URL | Documentation |
 | -------- | --- | ------------- |
 | ATOM     | https://sh-mis.gdi-sh.de/catalog/?lang=de#/datasets/iso/cc68aa82-d71b-42bb-b5ce-7b850486a842 | https://sh-mis.gdi-sh.de/catalog/?lang=de#/datasets/iso/cc68aa82-d71b-42bb-b5ce-7b850486a842 |
-| OGC WMS  | 	https://service.gdi-sh.de/WMS_SH_Feldblockfinder?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=Feldblöcke | - |
+| OGC WMS  | https://service.gdi-sh.de/WMS_SH_Feldblockfinder?SERVICE=WMS&VERSION=1.3.0&REQUEST=GetMap&LAYERS=Feldblöcke | - |

@@ -1,24 +1,25 @@
-# Czech Crop fields
+# Czechia
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Czech Ministry of Agriculture (Ministr Zemědělství)
+- **Data Provider (Legal Entity):** Czech Ministry of Agriculture (Ministr Zemědělství) (Government)
 - **Homepage:** https://mze.gov.cz/public/portal/mze/farmar/LPIS
 
 ## Overview
 
-Czech offers open data sets for fields as part of the implementation of the Inspire directive.
+Field boundaries for Czechia: the crop fields (Plodina) of the Czech Land Parcel Identification System (LPIS).
 
-Here we take not of the Field Blocks "Díly půdních bloků" (DPB) and Crop Fields "Plodiny".
+The dataset is published by the Czech Ministry of Agriculture as part of the implementation of the INSPIRE directive and the Common Agricultural Policy (CAP) / Integrated Administration and Control System (IACS) reporting obligations. It contains crop declarations within Field Blocks (Díly půdních bloků, DPB) of farmer applications.
 
 ## Data
 
-- **URL:** https://mze.gov.cz/public/portal/mze/farmar/LPIS/export-lpis-rocni-shp
-- **Documentation:** https://mze.gov.cz/public/app/lpisext/lpis/ng/plodiny-plpis/ (Crop index)
-- **File Format:** Shapefile/zip
-- **Projection:** EPSG:5514 or EPSG:4258
-- **License:** CC-0 (Publicly distributed as part of the Inspire directive)
+- **URL:** https://mze.gov.cz/public/app/eagriapp/Files/geoprostor_zadosti23_2024-08-01_202409261243_epsg4258.zip
+- **Documentation:** https://mze.gov.cz/public/portal/mze/farmar/LPIS
+- **File Format:** Shapefile (delivered as ZIP)
+- **Projection:** EPSG:4258
+- **License:** [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+- **Crop code list:** Mapped to EuroCrops HCAT via `cz_2023.csv`
 
 ### Properties
 

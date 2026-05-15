@@ -1,34 +1,24 @@
-# Global FieldID boundaries
+# Varda Global FieldID
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Andy Jenkinson, Varda AG
-- **Data Provider (Legal Entity):** Varda AG
-- **Homepage:** https://varda.ag/global-field-id
+- **Data Provider (Legal Entity):** Varda AG (Company)
+- **Homepage:** https://www.varda.ag
 
 ## Overview
 
-The Global FieldID service provides a universal and spatiotemporally unique identifier for every field in the world, along with the multitude of boundaries associated with it. The service acts as a registry of the field and its spatial extent, providing access to IDs and boundaries via API, free web app and downloads. Data are aggregated from a combination of public open datasets, earth observation and ground truth data via 1st-party and 3rd-party channels.
+The Global FieldID service provides a universal and spatiotemporally unique identifier for every field in the world, along with the multitude of boundaries associated with it. The service acts as a registry of the field and its spatial extent, providing access to IDs and boundaries via API, free web app and downloads. Data are aggregated from a combination of public open datasets, earth observation and ground-truth data via 1st-party and 3rd-party channels.
 
 ## Data
 
-The GFID data model includes objects representing:
-* fields
-* boundaries (polygons) stored in WGS84
-* external cross-references and metadata
-* temporal relationships between fields and boundaries
-* spatial relationships between boundaries
-
-GFID data is open by default, but permits registration of limited-access private data to enable discovery and/or private sharing networks. For every field, an openly accessible 'default' boundary must be provided; whilst users may contribute data to update the record, all default boundaries must be open.
-- **Documentation:** [Developer Portal](https://developer.varda.ag/fid)
-- **Downloads:** [Download Hub](https://fieldid.varda.ag/hub/downloads)
-- **File Format:** GeoJSON
+- **Data access:** Data must be obtained from the Varda API and saved as `.json` files. The easiest way to try it out is to use the UI at https://fieldid.varda.ag/ and find some fields and click "download .json file", or call the `/boundaries` endpoint — see https://developer.varda.ag/reference/get_boundaries_by_spatial_field_relationship_search-1. There is no public bulk-download URL.
+- **Downloads (UI):** https://fieldid.varda.ag/hub/downloads
+- **Documentation:** https://developer.varda.ag/fid
+- **File Format:** GeoJSON / JSON (per-feature export from the API)
 - **Projection:** EPSG:4326
-- **License:** Mixed (see https://fieldid.varda.ag/terms-conditions)
-- **Data Creation Details:** Combination of Official government, CV/AI output, Hand-drawn, machine-generated.
-- **Computer Vision / AI Details:** Multiple third party sources (provenance metadata is retained)
-
-...
+- **License:** [Varda Terms of use](https://fieldid.varda.ag/help/terms-conditions)
+- **Attribution:** © 2024 Varda
 
 ### Properties
 
@@ -47,12 +37,12 @@ Properties of the `boundary` object, which is an object representing a cannonica
 
 ### Example
 
-See API below
+See the API examples below.
 
 ## API
 
 | Standard | URL | Documentation |
-| -------- | --- | ------------- |
+|----------|-----|---------------|
 | REST | https://api.varda.ag/fid/v1 | https://developer.varda.ag/fid |
 
 ### Examples

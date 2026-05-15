@@ -3,26 +3,23 @@
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Danish Agricultural Agency, under the Ministry of Food, Agriculture and Fisheries of Denmark
-- **Homepage:** https://lbst.dk/ , https://fvm.dk/
+- **Data Provider (Legal Entity):** Danish Agricultural Agency (Landbrugsstyrelsen, under the Ministry of Food, Agriculture and Fisheries of Denmark) (Government)
+- **Homepage:** https://lbst.dk/
 
 ## Overview
 
-The Danish Ministry of Food, Agriculture and Fisheries publishes different open datasets. In this context,
-the relevant ones are Field Blocks (Markblokke) and Crop Fields (Marker).
-
-Crop field data is available from 2005 onwards and is typically published as
-"preliminary data" from the start of a year (updated monthly). Field blocks are available 
-before the year starts, starting from 2008.
+The Danish Ministry of Food, Agriculture and Fisheries publishes annual Crop Fields ("Marker") covering the parcels
+that farmers declare under the EU Common Agricultural Policy (CAP) within the Integrated Administration and Control
+System (IACS). The dataset is available from 2008 onwards and is typically released as preliminary data at the start
+of a year and updated through the season.
 
 ## Data
 
-- **URL:** https://landbrugsgeodata.fvm.dk/
+- **URL:** Per-year ZIP downloads at `https://landbrugsgeodata.fvm.dk/Download/Marker/Marker_<YEAR>.zip` for years 2008–2024 (e.g. https://landbrugsgeodata.fvm.dk/Download/Marker/Marker_2024.zip)
 - **Documentation:** https://geodata-info.dk/srv/eng/catalog.search#/metadata/d91b2c99-d9b0-4e6d-b323-20ac80548186
-- **Alternative open data portals**: https://sdfe.dk/ , https://www.geodata-info.dk/
-- **File Format:** Shapfile (in zip)
-- **Projection:** EPSG:25832
-- **License:** CC-0
+- **File Format:** Shapefile (zipped)
+- **Projection:** EPSG:25832 (ETRS89 / UTM zone 32N)
+- **License:** [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ### Properties
 
@@ -48,4 +45,3 @@ before the year starts, starting from 2008.
 ### Example
 
 See https://miljoegis.mim.dk/spatialmap?profile=lbst
-

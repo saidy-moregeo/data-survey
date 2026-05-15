@@ -1,27 +1,24 @@
-# Navarra SIGPAC
+# Navarra, Spain
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Foral Community of Navarre  (Comunidad Foral de Navarra)
-- **Homepage:** https://www.fega.gob.es/orig/
+- **Data Provider (Legal Entity):** Comunidad Foral de Navarra (Government)
+- **Homepage:** https://gobiernoabierto.navarra.es
 
 ## Overview
 
-Geographic Information System (SIGPAC) updated and coordinated with the land registry that allows 
-the geographical identification of plots declared by farmers in any aid scheme related to the surface area.
+This dataset contains the SIGPAC (Sistema de Información Geográfica de la Política Agrícola Común, the Geographical Information System for Common Agricultural Policy) reference enclosures (Recintos) for the autonomous community of Navarra, updated and coordinated with the land registry. It allows the geographical identification of plots declared by farmers in any aid scheme related to the surface area. The Comunidad Foral de Navarra publishes the graphic information in ESRI Shape format (in ETRS89 UTM 30N reference system).
 
-Link to download SIGPAC graphic and alphanumeric information by municipality: 
-graphic in ESRI Shape format (in ETRS89 UTM 30N reference system) and alphanumeric in CSV format.
+The Navarra SIGPAC download portal publishes per-municipality archives.
 
 ## Data
 
-- **URL:** https://filescartografia.navarra.es/2_CARTOGRAFIA_TEMATICA/2_6_SIGPAC/
+- **URL:** https://sigpac.navarra.es/descargas/ (per-municipality ZIP archives)
 - **Documentation:** https://sigpac.navarra.es/descargas/
-- **Documentation:** https://datos.gob.es/es/catalogo/a15002917-sigpac-recintos-sigpac
-- **File Format:** Shapefile+ZIP (per municipality)
-- **Projection:** EPSG:25830
-- **License:** CC-BY-4.0
+- **File Format:** Shapefile (per municipality, distributed as ZIP)
+- **Projection:** EPSG:25830 (ETRS89 / UTM zone 30N)
+- **License:** [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) (see https://sigpac.navarra.es/descargas/)
 - **Attribution:** Comunidad Foral de Navarra
 
 ### Properties

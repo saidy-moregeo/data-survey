@@ -1,32 +1,33 @@
-# Brasil CONAB fields
+# Brazil Crop Fields (CONAB)
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Tristan Grupp / Ivor Bosloper
-- **Data Provider (Legal Entity):** CONAB, Brazil's Government agency responsible for providing information on the country's agricultural harvest
-- **Homepage:** https://portaldeinformacoes.conab.gov.br/
+- **Data Provider (Legal Entity):** Companhia Nacional de Abastecimento (CONAB) (Government)
+- **Homepage:** https://portaldeinformacoes.conab.gov.br/mapeamentos-agricolas-downloads.html
 
 ## Overview
 
-Approximately 80k boundaries. After inspecting all boundaries in the CONAB public database, appear to be hand-drawn field boundaries.
+CONAB, Brazil's National Supply Company, is the government agency responsible for providing information on the country's agricultural harvest.
 
-Some boundaries might encapsulate multiple fields so could be split by road line geometries to improve them.
+This subset of 27 mappings, after inspecting all boundaries in the CONAB public database, appears to be hand-drawn field boundaries. The dataset covers a range of crops (cotton, irrigated rice, sugar cane, coffee, summer crops) across multiple Brazilian states (GO, MS, PR, RS, SC, TO, BA, DF, MG, RJ) and harvest years.
 
-Otherwise, filter them out by size OR potentially filter with randomly sampled points within each polygons, extracting NDVI time series to each point, filtering out boundaries whose points are too different in their time series of NDVI.
+The content of the Mappings comes from CONAB, total or partial reproduction without profit motives is authorized, as long as the source is cited and the integrity of the information is maintained.
+
+Further information or suggestions can be sent to the email address conab.geote@conab.gov.br.
 
 ## Data
 
-- **URL:** https://portaldeinformacoes.conab.gov.br/mapeamentos-agricolas-downloads.html
-- **Documentation:** https://docs.data.example
-- **File Format:** Shapefile+ZIP
-- **Projection:** EPSG:4674
-- **License:** CC-BY-NC
+- **URL:** https://portaldeinformacoes.conab.gov.br/downloads/mapas/ (multiple ZIP archives under `Algodao/`, `Arroz_Irrigado/`, `Cana/`, `Cafe/`, `Culturas_de_Verao_1_Safra/`)
+- **Documentation:** https://portaldeinformacoes.conab.gov.br/mapeamentos-agricolas-downloads.html
+- **File Format:** Shapefile (ZIP-packaged)
+- **Projection:** Mixed across files (commonly EPSG:4674 / SIRGAS 2000)
+- **License:** [CC-BY-NC-4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+- **Attribution:** CONAB - conab.gov.br
 
-License definition derived from:
+### Properties
 
-> O conteúdo dos Mapeamentos tem como fonte a Conab, a reprodução total ou parcial sem fins lucrativos é autorizada, desde que citada a fonte e mantendo a integridade das informações.
-
-> The content of the Mappings comes from Conab, total or partial reproduction without profit is authorized, as long as the source is cited and the integrity of the information is maintained.
+CONAB shapefiles have inconsistent naming between years; variants of municipality code/name and area exist across files.
 
 ### Properties
 

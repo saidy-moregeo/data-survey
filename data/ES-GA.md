@@ -1,33 +1,27 @@
-# Galicia SIXPAC Crop Fields
+# Galicia, Spain
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Xunta de Galicia - Oficina Virtual del Medio Rural
+- **Data Provider (Legal Entity):** Virtual Office for Rural Environment - Xunta de Galicia (Government)
 - **Homepage:** https://ovmediorural.xunta.gal/es/consultas-publicas/sixpac
 
 ## Overview
 
-The Geographic Information System for Agricultural Plots (SIXPAC) is an official reference database for the 
-identification of agricultural plots, which is mandatory in Spain for making applications for direct CAP aid that 
-require declaring surface areas.
+SIXPAC (the Galician name for SIGPAC - Sistema de Información Geográfica de la Política Agrícola Común, the Geographical Information System for Common Agricultural Policy) is the official reference database for the identification of agricultural plots, which is mandatory in Spain for making applications for direct CAP aid that require declaring surface areas. SIXPAC lets farmers indicate the location of the farm surfaces that may be eligible for subsidies and submit requests for changes to data related to land uses.
 
-The purpose of SIXPAC is to provide information to farmers applying for these aid schemes, so that they can indicate 
-the location of the farm surfaces that may be eligible for subsidies, as well as to facilitate the submission of
-requests for changes to data relating to land uses contained in the system.
+The Galicia data is exposed through the regional ESRI REST service. Yearly layers from 2010 through 2024 are available.
 
 ## Data
 
-- **URL:** https://ideg.xunta.gal/servizos/rest/services/ParcelasCatastrais/SIXPAC_2023/MapServer/
-- **Documentation:** https://sixpac.xunta.es/visorhtml5/
-- **File Format:** GeoJSON from ESRI/mapserver exports
-- **Projection:** EPSG:25829
-- **License:** CC-BY-4.0 (See https://mapas.xunta.gal/gl/aviso-legal , https://medioambiente.xunta.gal/seccion-organizacion/c/CMAOT_Instituto_Estudos_Territorio?content=Direccion_Xeral_Sostibilidade_Paisaxe/Informacion_publica/seccion.html&std=pgcix_2022_2025.html)
+- **URL:** https://ideg.xunta.gal/servizos/rest/services/ParcelasCatastrais/SIXPAC_`<YEAR>`/MapServer (ESRI REST MapServer; layer `recintos`)
+- **Documentation:** https://mapas.xunta.gal/gl/aviso-legal
+- **File Format:** ESRI REST / FeatureServer JSON (converted to GeoJSON)
+- **Projection:** EPSG:4326 (REST export)
+- **License:** [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) (see https://mapas.xunta.gal/gl/aviso-legal)
 - **Attribution:** Información procedente do FOGGA
 
-## Example
-
-https://mapas.xunta.gal/visores/conservaciondanatureza/
+The published surface (`DN_SURFACE`) is in square metres.
 
 ### Properties
 
@@ -61,8 +55,10 @@ https://mapas.xunta.gal/visores/conservaciondanatureza/
 
 ## API
 
-| Standard | URL                                                                              | Documentation   |
-|----------|----------------------------------------------------------------------------------|-----------------|
-| ESRI     | https://ideg.xunta.gal/servizos/rest/services/ParcelasCatastrais  | -               |
+| Standard  | URL                                                              | Documentation |
+|-----------|------------------------------------------------------------------|---------------|
+| ESRI REST | https://ideg.xunta.gal/servizos/rest/services/ParcelasCatastrais | Browse `SIXPAC_<YEAR>` services per year |
 
+### Example
 
+https://mapas.xunta.gal/visores/conservaciondanatureza/

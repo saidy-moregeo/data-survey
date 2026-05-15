@@ -3,41 +3,24 @@
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Ministry of Agriculture, Forestry and Food  (Ministrstvo za kmetijstvo, gozdarstvo in prehrano)
+- **Data Provider (Legal Entity):** Ministry of Agriculture, Forestry and Food (Ministrstvo za kmetijstvo, gozdarstvo in prehrano) (Government)
 - **Homepage:** https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-kmetijstvo-gozdarstvo-in-prehrano/
 
 ## Overview
 
-The Slovenian government provides slightly different, relevant open data sets called GERK, KMRS, RABA and EKRZ.
-Gerk includes all arable land, is updated monthly and describes 28 generic land coverage categories. The KRMS dataset 
-includes CAP applications of the last year and discerns around 150 different crop categories.
+Slovenia Crop Fields.
 
-The LPIS is a part of the Farm register (called RKG) and works as a spatial representation of areas utilized by 
-agricultural holdings (called KMG). The reference parcel of LPIS is the farmer's block (**block**). 
-A block is a contiguous area of agricultural land in agricultural use by one Farm (exceptions are
-defined in the legislation). The Farm land use unit (GERK) is a contiguous area of agricultural land with the same type
-of land use within each block. LPIS includes landscape features (called KRZ), which can only be declared in certain parts
-of the country. Farmers declare their land in the form of GERK or KRZ. Published LPIS data is available at the
-GERK/KRZ level with block id as an attribute and is updated monthly.
+The Slovenian government provides slightly different, relevant open data sets called GERK, KMRS, RABA and EKRZ. The KMRS dataset includes Common Agricultural Policy (CAP) applications of the last year and discerns around 150 different crop categories. The Land Parcel Identification System (LPIS) is part of the Farm register (RKG), used under the Integrated Administration and Control System (IACS) to administer farmers' single-application aid claims.
 
-The [MKGP-RKG public geographic data viewer](http://rkg.gov.si/GERK/WebViewer/) provides up-to-date data 
-for all GERKs in Slovenia, and data from the last aggregated application are available for download and via WMS.
+Yearly variants from 2021 to 2024 are available.
 
-Example; KMRS_2023 layer includes farmers declarations for 2023. The data is for main crop - it is possible that
-this is not the only crop on certain area in this year. The date of data august 2023. A farmer can change
-the declaration until the control is announced by the paying agency.
+## Data
 
-More information are available at: https://eprostor.gov.si/imps/srv/eng/catalog.search#/metadata/21ecba4a-1214-4617-8bf4-020d2f235a25
-
-## Data & Metadata
-
-- **URL:** https://rkg.gov.si/vstop/
-- **File Format:** Shapefile-rar
-- **Projection:** EPSG:3794
-- **License:** https://rkg.gov.si/vstop/ "Javno dostopni podatki" (Publicly available data)
-
-Download either [GERK](https://rkg.gov.si/arhiv/GERK/GERK_2024_10_31.zip) (current field usage) or 
-[KMRS](https://rkg.gov.si/razno/portal_analysis/KMRS_2023.rar) (farmer application)
+- **URL:** Yearly variants, of the form `https://rkg.gov.si/razno/portal_analysis/KMRS_{year}.rar` (containing `KMRS_{year}.shp`); supported years: 2021, 2022, 2023, 2024
+- **Documentation:** https://rkg.gov.si/vstop/ — see also the [MKGP-RKG public geographic data viewer](http://rkg.gov.si/GERK/WebViewer/)
+- **File Format:** Shapefile (delivered as RAR)
+- **Projection:** as published
+- **License:** [Javno dostopni podatki: Publicly available data](https://rkg.gov.si/vstop/)
 
 ### Properties
 
@@ -54,7 +37,7 @@ Download either [GERK](https://rkg.gov.si/arhiv/GERK/GERK_2024_10_31.zip) (curre
 
 See [example map for GERK](http://rkg.gov.si/GERK/WebViewer/)
 
-### API
+## API
 
 | Standard | URL                                                                                                                                                                                                                                                                         |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -3,23 +3,37 @@
 ## Submission Details
 
 - **Submitter (Affiliation):** Matthias Mohr
-- **Data Provider (Legal Entity):** Agriculture and Marine Fisheries Agency of the Flemish government (Government)
+- **Data Provider (Legal Entity):** Agentschap Landbouw & Zeevisserij (Government)
 - **Homepage:** https://landbouwcijfers.vlaanderen.be/open-geodata-landbouwgebruikspercelen
-- **Alternative URL:** https://www.vlaanderen.be/datavindplaats/catalogus/landbouwgebruikspercelen-lv-2022
 
 ## Overview
 
-Since 2020, the Department of Agriculture and Fisheries has been publishing a more extensive set of data related to agricultural use plots (from the 2008 campaign). 
+Since 2020, the Flemish Department of Agriculture and Fisheries has been publishing an extensive set of agricultural
+use plot data ("Landbouwgebruikspercelen") going back to the 2008 campaign. The dataset is the Flemish region's
+contribution to the EU Common Agricultural Policy (CAP) under the Integrated Administration and Control System
+(IACS), recording the parcels declared by farmers for area-based subsidies.
 
-From 2023, the downloadable dataset of agricultural use plots will also include the specialization given by the company (= company typology) and that is given to the plots of the company. Based on the typology, the companies are divided into 4 major specializations: arable farming, horticulture, livestock farming and mixed farms. The specialization of each company is calculated annually according to a European method and is based on the standard output of the various agricultural productions on the company. It is therefore an economic specialization and not a reflection of all agricultural production on the company. 
+From 2023 onward, the downloadable dataset also includes the company typology (economic specialisation): each farm is
+classified annually using a European method into one of four major specialisations (arable farming, horticulture,
+livestock farming, mixed farms) based on the standard output of its agricultural productions. The typology is then
+applied to each of the company's plots.
 
-## Data & Metadata
+## Data
 
-- **URL:** https://landbouwcijfers.vlaanderen.be/open-geodata-landbouwgebruikspercelen
-- **Documentation:** contained in the ZIP packages
-- **File Format:** GeoPackage / Shapefile
+- **URL:** Per-year GeoPackage downloads under `https://www.landbouwvlaanderen.be/bestanden/gis/`, e.g.
+  - 2025: `Landbouwgebruikspercelen_2025_-_Voorlopig_(extractie_02-06-2025)_GPKG.zip`
+  - 2024: `Landbouwgebruikspercelen_2024_-_Definitief_(extractie_27-03-2025)_GPKG.zip`
+  - 2023: `Landbouwgebruikspercelen_2023_-_Definitief_(extractie_28-03-2024)_GPKG.zip`
+  - 2022: `Landbouwgebruikspercelen_2022_-_Definitief_(extractie_26-06-2023)_GPKG.zip`
+  - 2021: `Landbouwgebruikspercelen_2021_-_Definitief_(extractie_15-03-2022)_GPKG.zip`
+  - 2020: `Landbouwgebruikspercelen_2020_uitgebreid_toestand_19-03-2021_GPKG.zip`
+  - 2019: `Landbouwgebruikspercelen_2019_-_Definitief_(extractie_20-03-2020)_GPKG.zip`
+  - 2018: `Landbouwgebruikspercelen_2018_-_Definitief_(extractie_23-03-2022)_GPKG.zip`
+- **Documentation:** https://landbouwcijfers.vlaanderen.be/open-geodata-landbouwgebruikspercelen (PDF documentation is included in each ZIP package)
+- **File Format:** GeoPackage (zipped)
 - **Projection:** EPSG:31370 (Belgian Lambert 72)
-- **License:** CC-0 (described as "Publiek" and "Toegang zonder voorwaarden")
+- **License:** [Modellicentie gratis hergebruik v1.0](https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0)
+- **Attribution:** "Bron: Dept. LV"
 
 ### Properties
 
@@ -68,11 +82,11 @@ Note: Many integer-like numbers are encoded as strings.
 
 ## API
 
-The open data viewer https://geopunt.be/ shows the data in a viewer (search term: landbouwgebruikspercelen)
-See https://www.vlaanderen.be/datavindplaats/catalogus/landbouwgebruikspercelen-lv-2022 for more info
+The open data viewer https://geopunt.be/ shows the data (search term: landbouwgebruikspercelen).
+See https://www.vlaanderen.be/datavindplaats/catalogus/landbouwgebruikspercelen-lv-2022 for more info.
 
 | Standard     | URL                                                         | Documentation                                                                                        |
 |--------------|-------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | OGC WFS      | https://geo.api.vlaanderen.be/Landbgebrperc/wfs             | https://www.vlaanderen.be/datavindplaats/catalogus/wfs-landbouwgebruikspercelen                      |
 | OGC Features | https://geo.api.vlaanderen.be/Landbgebrperc/ogc/features/v1 | https://metadata.vlaanderen.be/srv/dut/catalog.search#/metadata/01f408db-df8a-49a2-8ce4-0f66b8efe17b |
-| OGC WMS      | https://geo.api.vlaanderen.be/ALV/wms                       | https://www.vlaanderen.be/datavindplaats/catalogus/wms-departement-landbouw-en-visserij              | 
+| OGC WMS      | https://geo.api.vlaanderen.be/ALV/wms                       | https://www.vlaanderen.be/datavindplaats/catalogus/wms-departement-landbouw-en-visserij              |

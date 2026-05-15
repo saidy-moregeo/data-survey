@@ -48,7 +48,7 @@ tropics and for benchmarking classification methods.
 | Property             | Data Type | Constraints                | Description                                                   |
 |----------------------|-----------|----------------------------|---------------------------------------------------------------|
 | Id                   | string    |                            | Record identifier                                             |
-| Country              | string    | country name               | Source country (mapped to ISO `admin:country_code`)           |
+| Country              | string    | country name               | Source country                                                |
 | SiteName             | string    |                            | JECAM study-site name                                         |
 | AcquiDate            | date      |                            | Acquisition date of the waypoint                              |
 | Area_ha              | number    | hectares                   | Estimated field area (null if 0)                              |

@@ -1,26 +1,29 @@
-# Finnish Crop Fields (Maatalousmaa)
+# Finland
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Finnish Food Authority
+- **Data Provider (Legal Entity):** Finnish Food Authority (Ruokavirasto) (Government)
 - **Homepage:** https://www.ruokavirasto.fi/en/about-us/open-information/spatial-data-sets/
 
 ## Overview
 
-The Finnish Food Authority (FFA) since 2020 produces spatial data sets, 
-more specifically in this context the "Field parcel register" and "Agricultural parcel containing spatial data". 
-A set called "Agricultural land: arable land, permanent grassland or permanent crop (land use)".
+The Finnish Food Authority (Ruokavirasto) has, since 2020, produced spatial datasets covering the Finnish IACS LPIS,
+including the "Field parcel register" and the "Agricultural parcel containing spatial data" (the latter covers
+agricultural land comprising arable land, permanent grassland and permanent crops). The data underpins the Finnish
+implementation of the EU Common Agricultural Policy (CAP).
 
-All spatial data sets can be viewed in Finland’s national geo-portal [Paikkatietoikkuna](https://kartta.paikkatietoikkuna.fi/?lang=en).
+All spatial datasets can be browsed via Finland's national geo-portal
+[Paikkatietoikkuna](https://kartta.paikkatietoikkuna.fi/?lang=en).
 
 ## Data
 
-- **URL:** https://download.inspire.ruokavirasto-awsa.com/data/2023/LandUse.ExistingLandUse.AgriculturalArea.gpkg
+- **URL:** https://download.inspire.ruokavirasto-awsa.com/data/2023/LandUse.ExistingLandUse.GSAAAgriculturalParcel.gpkg
 - **Documentation:** https://www.ruokavirasto.fi/en/about-us/open-information/spatial-data-sets/
 - **File Format:** GeoPackage
-- **Projection:** EPSG:3067
-- **License:** CC-BY-4.0
+- **Projection:** EPSG:3067 (ETRS89 / TM35FIN)
+- **License:** [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Attribution:** "Finnish Food Authority"
 
 ### Properties
 
@@ -59,4 +62,4 @@ Example field from 2022:
 | OGC WMS  | https://inspire.ruokavirasto-awsa.com/geoserver/wms?request=getcapabilities |
 | OGC WFS  | https://inspire.ruokavirasto-awsa.com/geoserver/wfs?request=getcapabilities |
 
-Data is also discoverable through the [Spatial directory](https://www.paikkatietohakemisto.fi/geonetwork/srv/eng/catalog.search#/search?resultType=details&sortBy=relevance&any=Ruokavirasto)
+Data is also discoverable through the [Spatial directory](https://www.paikkatietohakemisto.fi/geonetwork/srv/eng/catalog.search#/search?resultType=details&sortBy=relevance&any=Ruokavirasto).

@@ -1,26 +1,25 @@
-# Catalonia Crop Fields (Mapa de cultius)
+# Cataluña (Catalonia), Spain
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Catalonia Department of Agriculture, Livestock, Fisheries and Food
+- **Data Provider (Legal Entity):** Catalonia Department of Agriculture, Livestock, Fisheries and Food (Government)
 - **Homepage:** https://agricultura.gencat.cat/ca/ambits/desenvolupament-rural/sigpac/mapa-cultius/
 
 ## Overview
 
-The Department of Agriculture, Livestock, Fisheries and Food makes available to the public the data from the crop map of Catalonia.
-This map allows you to locate the crops declared in the Agrarian Declaration - DUN submitted to the DACC.
-The DUN is the tool for making the declarations of agricultural holdings in Catalonia. It is also used to apply for grants and to carry out certain procedures with the Department of Agriculture in an integrated manner. The geographical basis of declaration is the SIGPAC area. Owners of agricultural holdings that have productive agricultural surface (excluding those for own consumption) are required to declare annually.
-Data from the DUN and the SIGPAC have been used to draw up this crop map. As the data declared are georeferenced, they can be located on the ground and this makes it possible to know, among other things, the identification of crops on each plot, the irrigation system and, depending on the cases, the second cultivation that is done in the plot
-This information makes it possible to make an economic assessment of the impact that hailstorms have on crops, the effects of pests, fires, etc. and also lets you know the historical evolution of crops in the territory.
+The Department of Agriculture, Livestock, Fisheries and Food publishes the Catalonia crop map (Mapa de cultius), which combines data from the Agrarian Declaration (DUN) submitted to the DACC with the SIGPAC (Sistema de Información Geográfica de la Política Agrícola Común, the Geographical Information System for Common Agricultural Policy) reference parcels. The DUN is the tool used to file declarations for agricultural holdings in Catalonia and is also used to apply for grants and certain procedures with the Department of Agriculture; declarations are georeferenced on the SIGPAC base, which lets users locate the declared crops on each plot and study irrigation, second cultivations and the historical evolution of crops in the territory.
+
+Unlike the other Spanish regions in this survey, Catalonia uses its own crop coding (not the generic SIGPAC land-use codes). The dataset is delivered per campaign, with annual variants from 2019 through 2024.
 
 ## Data
 
-- **URL:** https://agricultura.gencat.cat/ca/ambits/desenvolupament-rural/sigpac/mapa-cultius/
+- **URL:** https://analisi.transparenciacatalunya.cat/Medi-Rural-Pesca/Mapa-de-cultius-de-Catalunya-amb-origen-DUN/e7kw-9ebb (annual archives, e.g. `Cultius_DUN2024_SHP.zip`, `Cultius_DUN2023_GPKG.zip`)
 - **Documentation:** https://agricultura.gencat.cat/web/.content/09-desenvolupament-rural/comu/dades_obertes/origen-dades-mapa-cultius.pdf
-- **File Format:** GeoPackage / Shapefile
-- **Projection:** EPSG:25831
-- **License:** Open License, https://administraciodigital.gencat.cat/ca/dades/dades-obertes/informacio-practica/llicencies/
+- **File Format:** GeoPackage (recent years) / Shapefile (older years), distributed as ZIP
+- **Projection:** EPSG:25831 (ETRS89 / UTM zone 31N)
+- **License:** [The Open Information Use License - Catalonia](https://administraciodigital.gencat.cat/ca/dades/dades-obertes/informacio-practica/llicencies/)
+- **Attribution:** Catalonia Department of Agriculture, Livestock, Fisheries and Food
 
 ### Properties
 
@@ -42,10 +41,10 @@ This information makes it possible to make an economic assessment of the impact 
 
 ## API
 
-| Standard  | URL                                                                            | Documentation   |
-|-----------|--------------------------------------------------------------------------------|-----------------|
-| OGC WMS   | http://sig.gencat.cat/ows/AGRICULTURA/wms                                      | -               |
-| OGC WFS   | https://sig.gencat.cat/ows/AGRICULTURA/wfs?request=getcapabilities&service=wfs | -               |
+| Standard  | URL                                                                            | Documentation |
+|-----------|--------------------------------------------------------------------------------|---------------|
+| OGC WMS   | http://sig.gencat.cat/ows/AGRICULTURA/wms                                      | -             |
+| OGC WFS   | https://sig.gencat.cat/ows/AGRICULTURA/wfs?request=getcapabilities&service=wfs | -             |
 
 ### Example
 

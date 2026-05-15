@@ -3,7 +3,7 @@
 ## Submission Details
 
 - **Submitter (Affiliation):** Matthias Mohr
-- **Data Provider (Legal Entity):** Maja Schneider, TUM (Individual)
+- **Data Provider (Legal Entity):** Maja Schneider, Technical University of Munich (TUM) (Research / Individual)
 - **Homepage:** https://www.eurocrops.tum.de
 
 ## Overview
@@ -28,45 +28,177 @@ EuroCrops is a dataset collection combining all publicly available self-declared
 - [Slovenia](https://github.com/maja601/EuroCrops/wiki/Slovenia)
 - [Slovakia](https://github.com/maja601/EuroCrops/wiki/Slovakia)
 
+National-level FIBOA pages (where they exist) describe the underlying source datasets in more detail — this page focuses on the EuroCrops-harmonised variants and the per-country HCAT crop mapping files.
+
+The shared HCAT columns each variant adds are:
+
+| Property | Data Type | Constraints | Description |
+| -------- | --------- | ----------- | ----------- |
+| EC_trans_n | string | see HCAT | The original crop name translated into English |
+| EC_hcat_n  | string | see HCAT | Machine-readable HCAT name of the crop |
+| EC_hcat_c  | string | 10 digits | 10-digit HCAT code indicating the crop hierarchy |
+
+Country mapping CSVs are hosted at https://github.com/maja601/EuroCrops/tree/main/csvs/country_mappings.
+
 ## Data
 
-- **URL:**
-  - Shapes: https://syncandshare.lrz.de/getlink/fiAD95cTrXbnKMrdZYrFFcN8/
-  - Metadata: https://zenodo.org/records/10118572
-  - Cloud Native Geo Version: https://beta.source.coop/repositories/cholmes/eurocrops/
+- **Project URL:** https://github.com/maja601/EuroCrops
+- **Cloud-Native variant:** https://beta.source.coop/repositories/cholmes/eurocrops/
+- **Metadata catalogue:** https://zenodo.org/communities/eurocrops
+- **License:** [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
-- **Documentation:** https://github.com/maja601/EuroCrops
-- **File Format:** various (see below)
-- **Geometry Format (if different from data):**
-  - Shapefile
-  - GeoJSON (MultiPolygon)
-  - GeoParquet, Flatgeobuf and PMTiles single file harmonized only versions on source cooperative.
+## Country variants
 
-- **Metadata Format (if different from data):**
-  - Shapefile (see properties below)
-  - HDF5 (Sentinel-2 reflectance. Rows: Parcel ID, Columns: Timestamps, Cells: Reflectances per Band)
-  - CSV (Parcel ID, HCAT ID, crop name)
-  - GeoJSON (NUTS ID, crop name, crop ID, country name, ...)
+### Belgium — Flanders
 
-- **Projection:** EPSG:4326 (GeoJSON), ... (Shapefile), ... (HDF5)
+- **Year:** 2021
+- **Source ZIP:** https://zenodo.org/records/10118572/files/BE_VLG_2021.zip?download=1 -> `BE_VLG_2021/BE_VLG_2021_EC21.shp`
 - **License:** CC-BY-SA-4.0
+- **National page:** [BE-VLG.md](BE-VLG.md)
 
-EuroCrops delivers mostly the source data and harmonizes the crop classification.
+#### Properties
 
-### Properties
+| Property | Data Type | Constraints | Description |
+|----------|-----------|-------------|-------------|
+| geometry | Polygon | | Field-boundary geometry |
+| REF_ID | string | unique | Field identifier |
+| GRAF_OPP | number | | Area in hectares |
+| GWSCOD_H | string | | Main-crop code |
+| GWSNAM_H | string | | Main-crop name |
+| EC_trans_n / EC_hcat_n / EC_hcat_c | string | | HCAT columns added by EuroCrops |
 
-The properties in the Shapefiles correspond to the source datasets from the individual countries, and adds the properties for the Hierarchical Crop and Agriculture Taxonomy (HCAT). The properties for the individual countries are described either here in the survey repo or in the wiki page of EuroCrops (see the list of countries above).
+### Estonia
 
-| Property   | Data Type | Constraints | Description                                                 |
-| ---------- | --------- | ----------- | ----------------------------------------------------------- |
-| EC_trans_n | string    | see HCAT    | The original crop name translated into English              |
-| EC_hcat_n  | string    |             | The machine-readable HCAT name of the crop                  |
-| EC_hcat_c  | string    | digits only | The 10-digit HCAT code indicating the hierarchy of the crop |
+- **Year:** 2021
+- **Source ZIP:** https://zenodo.org/records/14094196/files/EE_2021.zip?download=1
+- **License:** CC-BY-SA-4.0 (original attribution: © Põllumajanduse Registrite ja Informatsiooni Amet)
+- **National page:** [EE.md](EE.md)
 
-As noted above, each individual country has many more attributes, as they are sourced from different national sources. In the ['cloud native' versions](https://beta.source.coop/cholmes/eurocrops/) 
-the only attributes included are the three above, plus the geometry, and all countries are combined into a single file.
+#### Properties
+
+| Property | Data Type | Constraints | Description |
+|----------|-----------|-------------|-------------|
+| geometry | Polygon | | Field-boundary geometry |
+| pollu_id | string | unique | Field identifier |
+| taotlusaas | integer | year | Year |
+| pindala_ha | number | ha | Area in hectares |
+| taotletud_ | string | | Requested crop culture |
+| taotletu_1 | string | | Requested land use |
+| taotletu_2 | string | | Requested support |
+| niitmise_t | string | | Mowing-detection status |
+| niitmise_1 | string | | Mowing-detection period |
+| viimase_mu | string | date | Last edit time |
+| taotleja_n | string | | Applicant name |
+| taotleja_r | string | | Applicant's registration code |
+| EC_trans_n / EC_hcat_n / EC_hcat_c | string | | HCAT columns added by EuroCrops |
+
+### Lithuania
+
+- **Year:** 2021
+- **Source ZIP:** https://zenodo.org/records/6868143/files/LT_2021.zip -> `LT/LT_2021_EC.shp`
+- **License:** CC-BY-SA-4.0
+- **National page:** [LT.md](LT.md)
+
+The source `Shape_Area` is in square metres. The `GRUPE` field covers crop classes including Vegetables, Buckwheat, Pulse cereals, Oats, Winter cereals, Summer cereals, Spring cereals, Sugar beet, Berries, Maize.
+
+#### Properties
+
+| Property | Data Type | Constraints | Description |
+|----------|-----------|-------------|-------------|
+| geometry | Polygon | | Field-boundary geometry |
+| NMA_ID | string | unique | Field identifier |
+| GRUPE | string | | Crop name |
+| Shape_Leng | number | m | Perimeter |
+| Shape_Area | number | m^2 | Area in square metres |
+| EC_trans_n / EC_hcat_n / EC_hcat_c | string | | HCAT columns added by EuroCrops |
+
+### Latvia
+
+- **Year:** 2021
+- **Source ZIP:** https://zenodo.org/records/8229128/files/LV_2021.zip -> `LV_2021/LV_2021_EC21.shp`
+- **License:** CC-BY-SA-4.0 (original attribution: Lauku atbalsta dienests)
+- **National page:** [LV.md](LV.md)
+
+The source ZIP already contains HCAT columns from EuroCrops.
+
+#### Properties
+
+| Property | Data Type | Constraints | Description |
+|----------|-----------|-------------|-------------|
+| geometry | Polygon | | Field-boundary geometry |
+| OBJECTID | string | unique | Field identifier |
+| AREA_DECLA | number | ha | Declared area |
+| DATA_CHANG | datetime | | Last change date |
+| PERIOD_COD | integer | year | Period code |
+| PARCEL_ID | integer | | Parcel identifier |
+| PRODUCT_CO | string | | Crop product code |
+| AID_FORMS | string | | Subsidy type |
+| EC_NUTS3 | string | NUTS 3 | NUTS-3 region |
+| EC_trans_n / EC_hcat_n / EC_hcat_c | string | | HCAT columns added by EuroCrops |
+
+### Netherlands (Crops)
+
+- **Year:** Per-year (2009-2025 in the base BRP dataset)
+- **Source URL:** yearly files at `https://service.pdok.nl/rvo/brpgewaspercelen/atom/v1_0/downloads/` (e.g. `brpgewaspercelen_definitief_2024.gpkg`)
+- **License:** CC-BY-SA-4.0 (original BRP licence is CC0-1.0)
+- **National page:** [NL.md](NL.md)
+
+#### Properties
+
+| Property | Data Type | Constraints | Description |
+|----------|-----------|-------------|-------------|
+| geometry | Polygon | | Field-boundary geometry |
+| id | string | unique | BRP identifier |
+| area | number | ha | Area in hectares |
+| category | string | Grasland / Bouwland | Grass- or arable-land category |
+| gewascode | string | | Crop code |
+| gewas | string | | Crop name |
+| jaar | integer | year | Year |
+| EC_trans_n / EC_hcat_n / EC_hcat_c | string | | HCAT columns added by EuroCrops |
+
+### Romania
+
+- **Year:** Cross-border project (no year set; 2017-01-01 used as the reference date)
+- **Source ZIP:** https://zenodo.org/records/14094196/files/RO_ny.zip?download=1 -> `RO/*.shp`
+- **License:** CC-BY-SA-4.0 (original licence: CC0-1.0)
+
+The `LC_MAPCODE` field covers agricultural classes including A (Arable Land), CAG (Covered Agricultural Land), G/N (Grassland), P/T (Trees), R (Rice).
+
+#### Properties
+
+| Property | Data Type | Constraints | Description |
+|----------|-----------|-------------|-------------|
+| geometry | Polygon | WGS 84 / UTM 35N | Field-boundary geometry |
+| AREA_HA | number | m^2 | Area |
+| SOURCE | string | | Source dataset reference |
+| LC_MAPCODE | string | | Land-cover code |
+| LC_CLASS_N | string | | Land-cover class name |
+| EC_trans_n / EC_hcat_n / EC_hcat_c | string | | HCAT columns added by EuroCrops |
+
+### Slovenia
+
+- **Year:** 2021
+- **Source ZIP:** https://zenodo.org/records/10118572/files/SI_2021.zip?download=1 -> `SI_2021_EC21.shp`
+- **License:** CC-BY-SA-4.0 (original attribution: Ministrstvo za kmetijstvo, gozdarstvo in prehrano)
+- **National page:** [SI.md](SI.md)
+
+`AREA` is in square metres. The source ZIP already contains HCAT columns from EuroCrops.
+
+#### Properties
+
+| Property | Data Type | Constraints | Description |
+|----------|-----------|-------------|-------------|
+| geometry | Polygon | | Field-boundary geometry |
+| ID | string | unique | Field identifier |
+| AREA | number | m^2 | Area |
+| GERK_PID | integer | | Slovenian GERK parcel id |
+| SIFRA_KMRS | string | | Crop-type class |
+| RASTLINA | string | | Plant |
+| CROP_LAT_E | string | | English Latin crop name |
+| COLOR | string | | Display colour |
+| EC_NUTS3 | string | NUTS 3 | NUTS-3 region |
+| EC_trans_n / EC_hcat_n / EC_hcat_c | string | | HCAT columns added by EuroCrops |
 
 ## API
 
-EuroCrops is made available by multiple third-parties through their APIs, e.g. Sentinel Hub and Euro Data Cube.
-
+EuroCrops is made available by multiple third-parties through their APIs, e.g. Sentinel Hub and Euro Data Cube. The harmonised cloud-native variant is also browsable on [Source Cooperative](https://beta.source.coop/repositories/cholmes/eurocrops/).

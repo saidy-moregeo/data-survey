@@ -1,27 +1,27 @@
-# Spain Balearic Islands SIGPAC
+# Islas Baleares (Balearic Islands), Spain
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Govern de les Illes Balears
-- **Homepage:** https://www.caib.es/webgoib/
+- **Data Provider (Legal Entity):** Govern de les Illes Balears (Government)
+- **Homepage:** https://gobiernoabierto.navarra.es/
 
 ## Overview
 
-The Geographic Information System of the Common Agricultural Policy of agricultural sites (SIGPAC), allows to identify geographically the enclosures declared by farmers and farmers, to any aid scheme related to the area cultivated or taken advantage of by the herd. The service includes protection strips on the banks of watercourses by application of BCAM 4.
+The Geographic Information System of the Common Agricultural Policy for agricultural sites (SIGPAC - Sistema de Información Geográfica de la Política Agrícola Común, the Geographical Information System for Common Agricultural Policy) allows the geographical identification of enclosures declared by farmers and farmers for any aid scheme related to the area cultivated or grazed. For the Balearic Islands the service includes protection strips on the banks of watercourses by application of BCAM 4.
 
-BCAM4: Do not apply fertilizers or plant protection products (in strips with a minimum width of 5 meters along watercourses, as well as reservoirs, lakes and lagoons (SIGPAC layer)). Do not carry out agricultural production (except for existing plantations and the sowing of wild flora, grazing or mowing).
+The data is served through the Balearic Islands ESRI REST service, with one yearly layer named `SIGPAC ... <YEAR>`. Years from 2010 through 2024 are exposed.
 
 ## Data
 
-- **URL:** https://ideib.caib.es/geoserveis/rest/services/public/GOIB_SIGPAC_IB/MapServer/
+- **URL:** https://ideib.caib.es/geoserveis/rest/services/public/GOIB_SIGPAC_IB/MapServer (ESRI REST MapServer; one layer per year named `SIGPAC ... <YEAR>`)
 - **Documentation:** https://intranet.caib.es/opendatacataleg/dataset/sigpac-2024
-- **File Format:** GeoJSON
-- **Projection:** EPSG:4326
-- **License:** CC-BY-4.0 ( http://www.opendefinition.org/licenses/cc-by )
+- **File Format:** ESRI REST / FeatureServer JSON (converted to GeoJSON)
+- **Projection:** EPSG:4326 (REST export)
+- **License:** [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) (see http://www.opendefinition.org/licenses/cc-by)
 - **Attribution:** Govern de les Illes Balears
 
-### Properties
+The published surface (`DN_SURFACE`) is in square metres.
 
 | Property     | Data Type | Constraints | Description          |
 |--------------|-----------|-------------|----------------------|
@@ -50,8 +50,6 @@ BCAM4: Do not apply fertilizers or plant protection products (in strips with a m
 
 ## API
 
-| Standard | URL                                                                              | Documentation   |
-|----------|----------------------------------------------------------------------------------|-----------------|
-| ESRI     | https://ideib.caib.es/geoserveis/rest/services/public/GOIB_SIGPAC_IB/MapServer/  | -               |
-
-
+| Standard  | URL                                                                             | Documentation |
+|-----------|---------------------------------------------------------------------------------|---------------|
+| ESRI REST | https://ideib.caib.es/geoserveis/rest/services/public/GOIB_SIGPAC_IB/MapServer/ | -             |

@@ -1,67 +1,62 @@
-# Croatia Crop fields (ARKOD Plots)
+# Croatia
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Agencija za plaćanja u poljoprivredi, ribarstvu i ruralnom razvoju objavila
+- **Data Provider (Legal Entity):** Agencija za plaćanja u poljoprivredi, ribarstvu i ruralnom razvoju (Government)
 - **Homepage:** https://www.apprrr.hr/prostorni-podaci-servisi/
 
 ## Overview
 
-ARKOD is a record of the use of agricultural land in the territory of the Republic of Croatia,
-which is maintained in digital graphic form by the Agency for Payments. ARKOD parcels represent uninterrupted
-areas of agricultural land cultivated by one farmer, classified according to the type of use of agricultural land. 
+Croatian Field Boundaries: field boundary data for Croatia, provided as part of national agricultural datasets.
 
-Registration of agricultural land - vectorization of ARKOD polygons is carried out by the method of
-photointerpretation of agricultural land on DOF bases in a scale of 1:5000 in branches of the Agency for Payments,
-statements of farmers on the use of agricultural land with proof of ownership or possession.
-ARKOD data is used within the IAKS system for monitoring subsidies related to surfaces,
-which is technically carried out by annually filling out the Single Request through the AGRONET application.
-Changes to the ARKOD data are carried out: at the request of the farmer, who is obliged to report the changes
-within 30 days of their occurrence, at the request of the landowner (disagreeing and uninformed),
-during the renewal of the DOF (annual dynamics of 50% of the state's territory),
-based on the results of the administrative controls, field controls, rapid field checks,
-agricultural inspection solutions, by implementing visual checks, ARKOD quality control results and
-administrative decisions of the Agency for Payments in Agriculture, Fisheries and Rural Development.
+This dataset contains spatial data related to agricultural land use in Croatia, including ARKOD parcel information, environmentally sensitive areas, High Nature Value Grasslands, protective buffer strips around watercourses, and vineyard classifications. The data is crucial for managing agricultural activities, ensuring compliance with environmental regulations, and supporting sustainable land use practices.
+
+ARKOD parcels are maintained by the Paying Agency in support of the Common Agricultural Policy (CAP) and the Integrated Administration and Control System (IACS), and represent the spatial reference for farmers' single-application aid claims.
 
 ## Data
 
-- **URL:** https://www.apprrr.hr/prostorni-podaci-servisi/
+- **URL:** https://www.apprrr.hr/wp-content/uploads/nipp/land_parcels.gpkg
+- **Documentation:** https://www.apprrr.hr/prostorni-podaci-servisi/
 - **File Format:** GeoPackage
-- **Projection:** EPSG:9122
-- **License:** Not stated . Data is downloadable.
+- **Projection:** as published
+- **License:** [Prostorni podaci i servisi](https://www.apprrr.hr/prostorni-podaci-servisi/)
+- **Attribution:** copyright © 2024. Agencija za plaćanja u poljoprivredi, ribarstvu i ruralnom razvoju
+- **Crop code list:** Mapped to EuroCrops HCAT via `hr_2020.csv`
 
 ### Properties
 
-| Property                 | Data Type | Constraints | Description                   |
-|--------------------------|-----------|-------------|-------------------------------|
-| land_use_id              | Real      |             | Land cover code               |
-| home_name                | String    |             |                               |
-| area                     | Real      |             | area                          |
-| perim                    | Real      |             | perimeter                     |
-| slope                    | Real      |             | slope                         |
-| z_avg                    | Real      |             | average height                |
-| eligibility_coef         | Real      |             | eligibility_coefficient       |
-| mines_status             | String    |             | mines status                  |
-| mines_year_removed       | Integer   |             | Year of mine removal          |
-| water_protect_zone       | String    |             | Water protection zone         |                 
-| natura2000               | Real      |             | Area of natura2000 protection |
-| natura2000_ok            | String    |             |                               |
-| natura2000_pop           | Real      |             |                               |
-| natura2000_povs          | Real      |             |                               |
-| anc                      | Integer   |             |                               |
-| anc_area                 | Real      |             |                               |
-| rp                       | Integer   |             |                               |
-| sanitary_protection_zone | String    |             |                               |                            
-| tvpv                     | Integer   |             |                               |                             
-| ot_nat                   | Integer   |             |                               |
-| ot_nat_area              | Real      |             |                               |
-| irrigation               | Integer   |             | has irrigation                |                             
-| irrigation_source        | Integer   |             | 0                             |             
-| irrigation_type          | Integer   |             | irrigation type               |                             
-| jpaid                    | String    |             |                               |
+| Property                 | Data Type | Constraints | Description |
+|--------------------------|-----------|-------------|-------------|
+| geometry                 | geometry  | Polygon / MultiPolygon | Field boundary geometry |
+| id                       | integer   |             | Feature identifier (taken from the file index) |
+| land_use_id              | integer   |             | Land use / crop code |
+| area                     | number    | square meters | Surface area in m² (converted to hectares) |
+| home_name                | string    |             | Locality / home name |
+| perim                    | number    |             | Parcel perimeter |
+| slope                    | number    |             | Average slope |
+| z_avg                    | number    |             | Average elevation (mapped to `height`) |
+| eligibility_coef         | number    |             | Eligibility coefficient |
+| mines_status             | string    | `N`, `M`, `R` | Mine contamination status |
+| mines_year_removed       | integer   |             | Year mines were removed |
+| water_protect_zone       | string    | required    | Water protection zone code |
+| natura2000               | number    |             | Natura 2000 overlap area |
+| natura2000_ok            | string    |             | Natura 2000 status |
+| natura2000_pop           | number    |             | Natura 2000 POP overlap |
+| natura2000_povs          | number    |             | Natura 2000 POVS overlap |
+| anc                      | integer   |             | Area with Natural Constraints flag |
+| anc_area                 | number    |             | ANC area |
+| rp                       | integer   |             | RP flag |
+| sanitary_protection_zone | string    | required    | Sanitary protection zone code |
+| tvpv                     | integer   |             | TVPV flag |
+| ot_nat                   | integer   |             | Other nature flag |
+| ot_nat_area              | number    |             | Other nature area |
+| irrigation               | integer   | required    | Irrigation flag |
+| irrigation_source        | integer   |             | Irrigation source code |
+| irrigation_type          | integer   |             | Irrigation type code |
+| jpaid                    | string    | required    | Unique single application identifier |
 
-## API (optional)
+## API
 
 | Standard | URL                                                                     | Documentation |
 |----------|-------------------------------------------------------------------------|---------------|

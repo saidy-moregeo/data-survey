@@ -1,31 +1,32 @@
-# Latvia Crop Fields (Lauku)
+# Latvia
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Rural Support Service Republic of Latvia (Lauku atbalsta dienests)
+- **Data Provider (Legal Entity):** Rural Support Service Republic of Latvia (Lauku atbalsta dienests) (Government)
 - **Homepage:** https://www.lad.gov.lv/lv/lauku-registra-dati
 
 ## Overview
 
-There's Field Blocks (Lauku bloku) and Fields (Lauki) for applications.
+Latvia Lauki Parcels.
 
-The land register is a geographic information system (GIS) that gathers information about agricultural land that is
-eligible for state and European Union support from direct support scheme payments or environmental,
-climate and rural landscape improvement payments.
+Latvia offers parcel data on a [public map, available to any user](https://www.lad.gov.lv/lv/lauku-registra-dati).
 
-The GIS of the field register contains a database of field blocks with interconnected spatial cartographic
-data and information of attributes subordinate to them: geographic attachment, identification numbers
-and area information.
+The land register is a geographic information system (GIS) that gathers information about agricultural land eligible for state and European Union support from direct support scheme payments or environmental, climate, and rural landscape improvement payments. As such, it forms Latvia's Land Parcel Identification System (LPIS) under the Common Agricultural Policy (CAP) / Integrated Administration and Control System (IACS).
+
+The GIS of the field register contains a database of field blocks with interconnected spatial cartographic data and information of attributes subordinate to them: geographic attachment, identification numbers, and area information.
+
+Relevant datasets are: Country blocks (Lauku Bloki), Fields (Lauki), and Landscape elements.
 
 ## Data
 
 - **URL:** https://karte.lad.gov.lv/arcgis/services/lauki/MapServer/WFSServer?request=GetFeature&service=wfs&version=2.0.0&typeNames=Lauki
-- **Documentation:** https://www.lad.gov.lv/lv/lauku-registrs
 - **Documentation:** https://www.lad.gov.lv/lv/lauku-registra-dati
-- **File Format:** GML . Currently other GetCapabilities declared formats fail (like geopackage/shape)
-- **Projection:** EPSG:3059
-- **License:** WFS has no access constraints
+- **File Format:** GML (WFS output)
+- **Projection:** as published (EPSG:3059)
+- **License:** [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) (best-effort assignment; data is "publicly available to any user", same license used by EuroCrops)
+- **Attribution:** Lauku atbalsta dienests
+- **Crop code list:** Mapped to EuroCrops HCAT via `lv_2021.csv`
 
 ### Properties
 
@@ -39,7 +40,7 @@ and area information.
 | AREA_DE CLARED      | float     |              | the claimed area                 |
 | DATA_CHANGED_DATE   | date      |              | data change date                 |
 
-## API (optional)
+## API
 
 | Standard | URL | Documentation |
 |----------| --- | ------------- |

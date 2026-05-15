@@ -3,29 +3,24 @@
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** National Open Data Catalog (Národného katalógu otvorených dát)
-- **Homepage:** https://data.slovensko.sk/
+- **Data Provider (Legal Entity):** Pôdohospodárska platobná agentúra (Government)
+- **Homepage:** https://www.apa.sk
 
 ## Overview
 
-Slovakia shares Field Blocks; Systém identifikácie poľnohospodárskych pozemkov (LPIS) and Crop fields (Hranice užívania)
+Slovakia Agricultural Land Identification System — Systém identifikácie poľnohospodárskych pozemkov (LPIS).
 
-LPIS is an agricultural land identification system. It represents the vector boundaries of agricultural land
-and carries information about the unique code, acreage, culture/land use, etc., which is used as a reference
-for farmers' applications, for administrative and cross-checks, on-site checks and also checks using remote
-sensing methods.
+LPIS is an agricultural land identification system. It represents the vector boundaries of agricultural land and carries information about the unique code, acreage, culture/land use, etc., which is used as a reference for farmers' applications, for administrative and cross-checks, on-site checks and also checks using remote sensing methods. As Slovakia's LPIS it is the spatial reference for the Common Agricultural Policy (CAP) / Integrated Administration and Control System (IACS).
 
-## Data & Metadata
+The dataset *Hranice užívania* contains the use declared by applicants for direct support.
 
-- **URL:** https://data.slovensko.sk/datasety/cc261225-7153-44a3-8ebf-05af207515c9
-- **File Format:** Shapefile-zip
-- **Projection:** EPSG:5514
-- **License:** Open data
+## Data
 
-Download either:
-    
-- [Systém identifikácie poľnohospodárskych pozemkov (LPIS)](https://data.slovensko.sk/datasety/4c408849-80e9-41a2-8c93-08a65b7ce4fb) (field blocks) or 
-- [Hranice užívania](https://data.slovensko.sk/datasety/cc261225-7153-44a3-8ebf-05af207515c9) (Crop fields)
+- **URL:** https://data.slovensko.sk/download?id=e39ad227-1899-4cff-b7c8-734f90aa0b59&blocksize=0 (containing `HU2024_20240917shp/HU2024_20240917.shp`)
+- **Documentation:** https://data.slovensko.sk/datasety/cc261225-7153-44a3-8ebf-05af207515c9
+- **File Format:** Shapefile (delivered as ZIP)
+- **Projection:** as published
+- **License:** [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/) (published as Open Data)
 
 ### Properties
 

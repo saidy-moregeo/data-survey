@@ -1,46 +1,41 @@
-# India
+# 10,000 Crop Field Boundaries across India
+
 ## Submission Details
 
-- **Submitter (Affiliation):** Snehal Chaudhari, ASU.
-- **Data Provider (Legal Entity):** Sherrie Wang, Francois Waldner, David B. Lobell
-- **Homepage:** https://www.mdpi.com/2072-4292/14/22/5738
+- **Submitter (Affiliation):** Snehal Chaudhari, ASU
+- **Data Provider (Legal Entity):** Zenodo / Sherrie Wang, Francois Waldner, David B. Lobell (Research)
+- **Homepage:** https://zenodo.org/records/7315090
 
 ## Overview
-The data containing 10,000 crop field boundaries in India and weights of the best-performing model. This dataset accompanies the paper "Unlocking large-scale crop field delineation in smallholder farming systems with transfer learning and weak supervision" (forthcoming in Remote Sensing). Ten thousand crop fields in India were delineated manually through inspection of high-resolution satellite imagery (Airbus SPOT).The weights of the highest performing neural network (FracTAL ResUNet architecture) pre-trained in France and fine-tuned on Airbus SPOT images in India are also provided. The model was trained in MXNet 1.6.0 and can be loaded with the "model.load_parameters()" function.
+
+Release of dataset and neural network weights accompanying the paper "Unlocking large-scale crop field delineation in smallholder farming systems with transfer learning and weak supervision" (published in Remote Sensing). Ten thousand crop fields in India were delineated manually through inspection of high-resolution satellite imagery (Airbus SPOT). The publication also provides the weights of the highest performing neural network (FracTAL ResUNet architecture) pre-trained in France and fine-tuned on Airbus SPOT images in India. The model was trained in MXNet 1.6.0 and can be loaded with the `model.load_parameters()` function.
 
 ## Data
 
-<!-- Any important information about your field boundary data and metadata,
-e.g. in which format and projection the geometry is provided. -->
-
-- **URL:** https://zenodo.org/records/7315090
-- **Documentation:**  https://www.mdpi.com/2072-4292/14/22/5738
-- **File Format:** Shapefile
-- **Geometry Format (if different from data):** -
-- **Metadata Format (if different from data):** -
-- **Projection:** WGS 84
-- **License:** CC BY 4.0
-- **Computer Vision / AI Details:** At first, human workers labeled 5 fields per image across 2000 images from throughout India. By training models on partial labels instead of fully-segmented labels, the authors reduced the labeling burden, sampled a broader diversity of landscapes across India, and decoupled field delineation from cropland mapping. Second, a neural network was pre-trained on partial field boundary data in France, where a large dataset of government-collected field boundaries is available. Lastly, the model was fine-tuned to predict partial field boundaries in India using either PlanetScope or Airbus SPOT imagery. 
-
+- **URL:** https://zenodo.org/api/records/7315090/files-archive (downloaded as `india_10k.zip`)
+- **Documentation:** https://www.mdpi.com/2072-4292/14/22/5738
+- **File Format:** Shapefile (inside ZIP)
+- **Projection:** EPSG:4326 (WGS 84)
+- **License:** [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
+- **Attribution:** https://doi.org/10.5281/zenodo.7315090
+- **Citation:** Wang, S., Waldner, F., & Lobell, D. B. (2022). Unlocking large-scale crop field delineation in smallholder farming systems with transfer learning and weak supervision. *Remote Sensing*. https://doi.org/10.5281/zenodo.7315090
 
 ### Properties
 
-<!-- A list of properties with e.g. a short description, data type, constraints such as value range or allowed values, etc. This can be found by opening the data file in qgis, then 
-   right clicking on the layer and selecting 'layer properties', and then going to the 'fields' section. The 'name' in qgis is the property in this table, and the 'Type name' is the Data Type -->
+The source dataset is sparsely attributed; only geometry and area are provided.
 
-| Property | Data Type | Constraints | Description       |
-| -------- | --------- | ----------- | ----------------- |
-| area     | double    |             | Area (not sure of units)   |
-| sample   | integer   |             | ?                 |
+| Property | Data Type | Constraints | Description |
+|----------|-----------|-------------|-------------|
+| geometry | Polygon   | EPSG:4326   | Field boundary geometry |
+| area     | number    | square metres | Pre-computed area in m² |
 
 ### Example
 
-| Property   | Example Value    |
-| ---------- | ---------------- |
-| area       | 15182.634905182778311 |
-| sample     | sample           |
+| Property | Example Value |
+| -------- | ------------- |
+| area     | 15182.634905182778 |
+| sample   | sample |
 
-## API (optional)
+## API
 
-No publicly documented API found.
-
+No publicly documented API; data is distributed via the Zenodo archive.

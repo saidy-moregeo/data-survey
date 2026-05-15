@@ -1,46 +1,31 @@
-# NZ National irrigated land
+# New Zealand Irrigated Land Area
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** NZ Ministry for the environment
-- **Homepage:** https://environment.govt.nz/
+- **Data Provider (Legal Entity):** Aqualinc Research Limited (adapted by NZ Ministry for the Environment & Statistics New Zealand) (Government / Research)
+- **Homepage:** https://environment.govt.nz/publications/national-irrigated-land-spatial-dataset-2020-update
 
 ## Overview
 
-This dataset covers Irrigated Land. It's not a full/high-quality crop field dataset for the country.
+This dataset covers Irrigated Land. It was adapted by the Ministry for the Environment and Statistics New Zealand to provide for environmental reporting transparency.
 
-DATA SOURCE: Aqualinc Research Limited, [Technical report available](https://environment.govt.nz/publications/national-irrigated-land-spatial-dataset-2020-update)
+The spatial data covers all mainland regions of New Zealand, with the exception of Nelson, which is not believed to contain significant irrigated areas. The spatial dataset is an update of the national dataset that was first created in 2017. The current update has incorporated data from the 2019–2020 irrigation season.
 
-Adapted by Ministry for the Environment and Statistics New Zealand to provide for environmental reporting transparency
-
-The spatial data covers all mainland regions of New Zealand, with the exception of Nelson, which is not believed to 
-contain significant irrigated areas. The spatial dataset is an update of the national dataset that was first 
-created in 2017. The current update has incorporated data from the 2019 – 2020 irrigation season.
-
-More information on this dataset and how it relates to our environmental reporting indicators and topics can be 
-found in [the attached data quality pdf](https://data.mfe.govt.nz/services/api/v1.x/layers/105407/versions/312134/attachments/22954/download/).
-
-Data can be downloaded manually by going to https://data.mfe.govt.nz/layer/105407-irrigated-land-area-raw-2020-update/ and clicking Export
+It is not a full / high-quality crop field dataset for the country, but it is the most consistent national-scale agricultural-extent dataset publicly available for New Zealand.
 
 ## Data
 
-- **URL:** https://data.mfe.govt.nz/layer/105407-irrigated-land-area-raw-2020-update/
+- **URL:** https://data.mfe.govt.nz/layer/105407-irrigated-land-area-raw-2020-update/ (download manually, e.g. via Export)
 - **Documentation:** https://environment.govt.nz/publications/national-irrigated-land-spatial-dataset-2020-update/
-- **Document:** https://environment.govt.nz/assets/Publications/national-irrigated-land-spacial-dataset.pdf
-- **File Format:** GeoPackage / Shapefile
-- **Projection:** EPSG:2193 NZGD2000 / New Zealand Transverse Mercator 2000
-- **License:** CC-BY-4.0 https://data.mfe.govt.nz/license/attribution-4-0-international/
-- **Attribution:** New Zealand Ministry for the Environment
+- **File Format:** GeoPackage / Shapefile (manual download)
+- **Projection:** EPSG:2193 (NZGD2000 / New Zealand Transverse Mercator 2000)
+- **License:** [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
 
 > Users of the spatial dataset are advised:
-> 
-> - This is a desktop study, and the methods used in the mapping cannot be relied on to give complete
-> accuracy. Verification has only been carried out in a limited number of catchments, for other
-> projects.
-> - Before reliance is made on the spatial dataset in relation to specific catchments, irrigation schemes
-> or farms, it is recommended that updated information should be sought from irrigation schemes and
-> / or individual farms.
+>
+> - This is a desktop study, and the methods used in the mapping cannot be relied on to give complete accuracy. Verification has only been carried out in a limited number of catchments, for other projects.
+> - Before reliance is made on the spatial dataset in relation to specific catchments, irrigation schemes or farms, it is recommended that updated information should be sought from irrigation schemes and / or individual farms.
 
 ### Properties
 
@@ -70,14 +55,13 @@ Data can be downloaded manually by going to https://data.mfe.govt.nz/layer/10540
 
 ## API
 
-The services and API-keys are processed through the https://koordinates.com/ platform
+The services and API-keys are processed through the https://koordinates.com/ platform.
 
-
-| Standard    | URL                                                                                                                                                            | Documentation |
-|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| OGC WFS     | https://data.mfe.govt.nz/services;key=[api_token]/wfs/layer-105407/?service=WFS&request=GetCapabilities                                                        | -             |
-| OGC WMS     | https://data.mfe.govt.nz/services;key=[api_token]/wfs/?service=WFS&request=GetCapabilities                                                                     |               |
-| Vector json | https://data.mfe.govt.nz/services/query/v1/vector.json?key=[api_token]&layer=105407&x=[x]&y=[y]&max_results=3&radius=10000&geometry=true&with_field_names=true |               |
+| Standard | URL | Documentation |
+|----------|-----|---------------|
+| OGC WFS | https://data.mfe.govt.nz/services;key=[api_token]/wfs/layer-105407/?service=WFS&request=GetCapabilities | - |
+| OGC WMS | https://data.mfe.govt.nz/services;key=[api_token]/wfs/?service=WFS&request=GetCapabilities | - |
+| Vector JSON | https://data.mfe.govt.nz/services/query/v1/vector.json?key=[api_token]&layer=105407&x=[x]&y=[y]&max_results=3&radius=10000&geometry=true&with_field_names=true | - |
 
 ### Example
 

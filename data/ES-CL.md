@@ -1,33 +1,22 @@
-# Spain Castile and León Crop fields (SIGPAC)
+# Castilla y León, Spain
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Spain Castilla y León
-- **Homepage:** https://www.itacyl.es/
+- **Data Provider (Legal Entity):** Junta de Castilla y León (Government)
+- **Homepage:** https://datos.jcyl.es/web/jcyl/set/es/sector-publico/sigpac/1284212629849
 
 ## Overview
 
-Official SIGPAC land plan for the year 2024 (reference date 02-01-2024)
-Data is based on the SIGPAC (FEGA) database.
-
-The content of each *.zip file is 3 files in SHP format with their respective auxiliaries, each of them represents:
-
-1. The polygons called (POLFE.* )  
-2. The plots called (PARFE.* )
-3. The enclosures called (RECFE.* )
-
-Free use of the data is permitted, but commercial exploitation is prohibited.
+This dataset is the official SIGPAC (Sistema de Información Geográfica de la Política Agrícola Común, the Geographical Information System for Common Agricultural Policy) land plan for Castilla y León. It is based on the SIGPAC (FEGA) database and includes the Land Consolidation Replacement Farms that are not always updated in the public SIGPAC viewer. The data is curated by the regional Department of Agriculture, Livestock and Rural Development and published per province, per campaign year (2019–2025).
 
 ## Data
 
-- **URL:** http://ftp.itacyl.es/cartografia/05_SIGPAC/
+- **URL:** http://ftp.itacyl.es/cartografia/05_SIGPAC/`<YEAR>`_ETRS89/Parcelario_SIGPAC_CyL_Provincias/ (per-province ZIP archives, e.g. `2025_ETRS89/...`)
 - **Documentation:** http://ftp.itacyl.es/cartografia/05_SIGPAC/Catalogo_Metadatos/
-- **Documentation:** https://www.itacyl.es/agro-y-geo-tecnologia/descarga-datos-geograficos/sigpac
-- **File Format:** Shapefile+ZIP, spread over 255 zip-files
-- **Projection:** EPSG:4258
-- **License:** CC-NC (a Non-free license)
-- **Attribution:** Not for non-commercial use
+- **File Format:** Shapefile (per province, distributed as ZIP; enclosure shapefile named `*_RECFE*.shp` / `*_BURGOS*.shp`)
+- **Projection:** EPSG:4258 (ETRS89 geographic)
+- **License:** CC-NC: Free use of the data is permitted, but commercial exploitation is prohibited (see [LICENCIA-IGCYL-NC-2012.pdf](http://ftp.itacyl.es/cartografia/LICENCIA-IGCYL-NC-2012.pdf))
 
 ### Properties
 

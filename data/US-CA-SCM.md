@@ -1,36 +1,26 @@
-# California Statewide Crop Mapping
+# California (US) Statewide Crop Mapping
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** California Department of Water Resources
+- **Data Provider (Legal Entity):** California Department of Water Resources (DWR) (Government)
 - **Homepage:** https://water.ca.gov/
 
 ## Overview
 
-For many years, the California Department of Water Resources (DWR) has collected land use data throughout the state
-and used this information to develop water use estimates for statewide and regional planning efforts, including water
-use projections, water use efficiency evaluation, groundwater model development, and water transfers. These data are
-essential for regional analysis and decision making, which has become increasingly important as DWR and other state agencies
-seek to address resource management issues, regulatory compliance issues, environmental impacts, ecosystem services,
-urban and economic development, and other issues. Increased availability of digital satellite imagery, aerial photography
-and new analytical tools make remote sensing based land use surveys possible at a field scale that is comparable to that
-of DWR’s historical on the ground field surveys. Current technologies allow accurate, large-scale crop and land use
-identification to be performed at desired time increments, and make possible more frequent and comprehensive statewide
-land use information. Responding to this need, DWR sought expertise and support for identifying crop types and other
-land uses and quantifying crop acreages statewide using remotely sensed imagery and associated analytical techniques.
-Currently, Statewide Crop Maps are available for the Water Years 2014, 2016, 2018, 2019, 2020, 2021 and PROVISIONALLY 
-for 2022.
+For many years, the California Department of Water Resources (DWR) has collected land use data throughout the state and used this information to develop water use estimates for statewide and regional planning efforts, including water use projections, water use efficiency evaluation, groundwater model development, and water transfers. These data are essential for regional analysis and decision making, which has become increasingly important as DWR and other state agencies seek to address resource management issues, regulatory compliance issues, environmental impacts, ecosystem services, urban and economic development, and other issues.
 
-## Data & Metadata
+Two recent variants are published: `2023` (provisional, dated 2024-11-27) and `2022` (provisional).
 
-- **URL:** https://data.cnra.ca.gov/dataset/6c3d65e3-35bb-49e1-a51e-49d5a2cf09a9/resource/35251d3a-22ce-4661-9e11-4eecd0edebd1/download/i15_crop_mapping_2022_provisional_shp.zip 
-- **URL:** https://data.cnra.ca.gov/dataset/statewide-crop-mapping/resource/6ade4f9e-3631-4666-b2d9-21cf20222a6e
-- **Documentation:** https://lab.data.ca.gov/dataset/statewide-crop-mapping
-- **Documentation:** https://data.cnra.ca.gov/dataset/statewide-crop-mapping
-- **File Format:** Shapefile/zip and ESRI FileGDB
+## Data
+
+- **URL:**
+  - 2023: https://data.cnra.ca.gov/dataset/6c3d65e3-35bb-49e1-a51e-49d5a2cf09a9/resource/4e17ca38-268e-4bf5-bbc5-09636d44ed60/download/i15_crop_mapping_2023_provisional_20241127.gdb.zip
+  - 2022: https://data.cnra.ca.gov/dataset/6c3d65e3-35bb-49e1-a51e-49d5a2cf09a9/resource/f38d3f6f-dcf1-4553-9f07-4f381d494320/download/i15_crop_mapping_2022_provisional_gdb.zip
+- **Documentation:** https://data.cnra.ca.gov/dataset/statewide-crop-mapping and https://lab.data.ca.gov/dataset/statewide-crop-mapping
+- **File Format:** ESRI File GeoDatabase (zipped)
 - **Projection:** EPSG:4269 (NAD83)
-- **License:** CC-0
+- **License:** [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ### Properties
 
@@ -91,18 +81,13 @@ for 2022.
 
 ### Example
 
-Historic County Land Use Surveys spanning 1986 - 2015 may also be accessed using the CADWR Land Use 
-Data Viewer: https://gis.water.ca.gov/app/CADWRLandUseViewer. For Regional Land Use Surveys follow:
-https://data.cnra.ca.gov/dataset/region-land-use-surveys. 
-For County Land Use Surveys follow: https://data.cnra.ca.gov/dataset/county-land-use-surveys.
+Historic County Land Use Surveys spanning 1986–2015 may also be accessed via the [CADWR Land Use Data Viewer](https://gis.water.ca.gov/app/CADWRLandUseViewer). For Regional Land Use Surveys see https://data.cnra.ca.gov/dataset/region-land-use-surveys and for County Land Use Surveys https://data.cnra.ca.gov/dataset/county-land-use-surveys.
 
-# API
+## API
 
 As published at [the documentation](https://lab.data.ca.gov/dataset/statewide-crop-mapping).
 
-| Standard | URL                                                                                                                                            |
-|----------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| Standard | URL |
+|----------|-----|
 | OGC WMS  | https://utility.arcgis.com/usrsvcs/servers/af03260dc1304199aca6fb9109a8f900/rest/services/Planning/i15_Crop_Mapping_2022_Provisional/MapServer |
-| OGC WMS  | https://utility.arcgis.com/usrsvcs/servers/5fe15fbb9296403eb4ea91e3d031619d/rest/services/Planning/i15_Crop_Mapping_2021/MapServer             |
-
-
+| OGC WMS  | https://utility.arcgis.com/usrsvcs/servers/5fe15fbb9296403eb4ea91e3d031619d/rest/services/Planning/i15_Crop_Mapping_2021/MapServer |

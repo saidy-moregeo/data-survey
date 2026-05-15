@@ -1,31 +1,31 @@
-# Portugal Crop Fields
+# Portugal
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** IPAP - Instituto de Financiamento da Agricultura e Pescas
+- **Data Provider (Legal Entity):** IPAP - Instituto de Financiamento da Agricultura e Pescas (Government)
 - **Homepage:** https://www.ifap.pt/isip/ows/
 
 ## Overview
 
-Field blocks and Crop Fields identified in the Parcel Identification system (iSIP) as applied-for in the CAP.
-Updated annually (https://www.ifap.pt/sip-informacao-basica), organized by NUTII until 2018. 
+Open field boundaries (identificação de parcelas) from Portugal.
 
-Three different data sets are published, we wil use the Crop Fields.
+Field blocks and crop fields are identified in the Portuguese Parcel Identification System (iSIP) as applied for in the Common Agricultural Policy (CAP) / Integrated Administration and Control System (IACS). The data is updated annually and published as open data via IFAP.
 
-- Field Blocks (Parcelas)
-- Land Cover (Ocupações de solo)
-- Crop Fields (Culturas)
+The crop-field level boundaries are published in `Culturas_` (crop) layers.
 
 ## Data
 
-- **URL:** https://www.ifap.pt/isip/ows/resources/2023/Continente.gpkg
-- **Documentation:** https://www.ifap.pt/isip/ows/resources/desc_informacao.pdf (Portugese)
-- **Crop codes:** https://www.ifap.pt/isip/ows/resources/Culturas.zip
-- **File Format:** GeoPackage
-- **Projection:** EPSG:3763
-- **Contact:** dadosgeograficos@ifap.pt
-- **License:** "no conditions apply". Seems to refer to Inspire license https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply
+- **URL:** Multi-year, available via https://www.ifap.pt/isip/ows/ — yearly variants supported:
+  - 2023: https://www.ifap.pt/isip/ows/resources/2023/Continente.gpkg
+  - 2022: https://www.ifap.pt/isip/ows/resources/2022/2022.zip
+  - 2021: https://www.ifap.pt/isip/ows/resources/2021/2021.zip
+  - 2020-2017: https://www.ifap.pt/isip/ows/resources/2017-2020/{year}.zip
+  - 2016-2015: https://www.ifap.pt/isip/ows/resources/2011_2016/{year}.zip
+- **Documentation:** https://www.ifap.pt/isip/ows/
+- **File Format:** GeoPackage (2023) / Shapefile in ZIP (other years)
+- **Projection:** as published
+- **License:** [No conditions apply](https://inspire.ec.europa.eu/metadata-codelist/ConditionsApplyingToAccessAndUse/noConditionsApply)
 
 ### Properties
 
@@ -46,6 +46,6 @@ See https://www.ifap.pt/isip/ows/resources/parcelas.pdf
 ## API
 
 | Standard | URL                                                                            |
-|----------|--------------------------------------------------------------------------------| 
+|----------|--------------------------------------------------------------------------------|
 | OGC WMS  | https://www.ifap.pt/isip/ows/isip.data/wms?service=wms&request=getcapabilities |
 | OGC WFS  | https://www.ifap.pt/isip/ows/isip.data/wfs?service=wfs&request=getcapabilities |

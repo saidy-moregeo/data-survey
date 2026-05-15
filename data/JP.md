@@ -67,8 +67,8 @@ Currently, the publishing organization doesn't mention _crop_ but designates thi
 
 ### Example
 
-See [example map](https://open.fude.maff.go.jp/)
+See the [example map](https://open.fude.maff.go.jp/).
 
 ## API
 
-See https://www.fude.maff.go.jp/ . To use this service, you will need an eMAFF ID (gBizID).
+See https://www.fude.maff.go.jp/. To use this service, you will need an eMAFF ID (gBizID).

@@ -1,36 +1,35 @@
-# France: Registre parcellaire graphique (RPG)
+# France: Registre Parcellaire Graphique (RPG)
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Institut National de l'Information Géographique et Forestière (contact.geoservices@ign.fr )
+- **Data Provider (Legal Entity):** Institut National de l'Information Géographique et Forestière (IGN) (Government)
 - **Homepage:** https://www.data.gouv.fr/en/datasets/registre-parcellaire-graphique-rpg-contours-des-parcelles-et-ilots-culturaux-et-leur-groupe-de-cultures-majoritaire/
 
 ## Overview
 
-France has published Crop Field data for many years. Crop fields are declared by farmers within the Common 
-Agricultural Policy (CAP) subsidy scheme.
+France has published Crop Field data ("Registre Parcellaire Graphique" — RPG) for many years. The RPG records crop
+fields declared by farmers within the EU Common Agricultural Policy (CAP) subsidy scheme as part of the Integrated
+Administration and Control System (IACS).
 
-The anonymized version is distributed as part of the public service for making reference data available 
-contains graphic data for plots (basic land unit for farmers' declaration) with their main crop. 
-This data has been produced by the Services and Payment Agency (ASP) since 2007.
+The anonymised version, distributed as a public reference dataset, contains graphic data for plots (the basic land
+unit of farmers' declarations) together with the main crop on each plot. The data has been produced by the Services
+and Payment Agency (ASP) since 2007 and is published annually.
 
 ## Data
 
-- **URL:** https://geoservices.ign.fr/rpg
+- **URL:** Per-year GeoPackage (7-Zip) downloads from data.geopf.fr:
+  - 2023: https://data.geopf.fr/telechargement/download/RPG/RPG_2-2__GPKG_LAMB93_FXX_2023-01-01/RPG_2-2__GPKG_LAMB93_FXX_2023-01-01.7z (file `RPG_2-2__GPKG_LAMB93_FXX_2023-01-01.gpkg`)
+  - 2022: https://data.geopf.fr/telechargement/download/RPG/RPG_2-0__GPKG_LAMB93_FXX_2022-01-01/RPG_2-0__GPKG_LAMB93_FXX_2022-01-01.7z.001 (file `PARCELLES_GRAPHIQUES.gpkg`)
+  - 2021: https://data.geopf.fr/telechargement/download/RPG/RPG_2-0__GPKG_LAMB93_FXX_2021-01-01/RPG_2-0__GPKG_LAMB93_FXX_2021-01-01.7z (file `PARCELLES_GRAPHIQUES.gpkg`)
+  - 2020: split download (`.7z.001` + `.7z.002`) at https://data.geopf.fr/telechargement/download/RPG/RPG_2-0__GPKG_LAMB93_FR_2020-01-01/
+  - 2019: https://data.geopf.fr/telechargement/download/RPG/RPG_2-0_GPKG_LAMB93_FR-2019/RPG_2-0_GPKG_LAMB93_FR-2019.7z
+  - 2018 (Shapefile): https://data.geopf.fr/telechargement/download/RPG/RPG_2-0__SHP_LAMB93_FR-2017_2017-01-01/RPG_2-0__SHP_LAMB93_FR-2017_2017-01-01.7z
 - **Documentation:** https://geoservices.ign.fr/documentation/donnees/vecteur/rpg
-- **File Format:** Shapefile, Geopackage
-- **Projection:** EPSG:2154 (RGF93 / Lambert-93) for métropole (European France). Overseas territories (outre-mer) are published in suitable UTM- projections.
-- **License:** "Licence Ouverte / Open Licence" https://etalab.gouv.fr/licence-ouverte-open-licence
-
-License text at download page:
-> _La réutilisation du RPG est gratuite pour tous les usages, y compris commerciaux, selon les termes de la "licence ouverte" version 2.0._
-
-License text in [metadata](https://geoservices.ign.fr/sites/default/files/2023-11/IGNF_RPG_2-1.html): 
-> _Base de données soumise aux conditions de la licence ouverte Etalab._
-
-The mentioned [Etalab open License](https://etalab.gouv.fr/licence-ouverte-open-licence) is published 
-by the government. There's an [English version](https://www.etalab.gouv.fr/wp-content/uploads/2018/11/open-licence.pdf)
+- **File Format:** GeoPackage (for most years), Shapefile (for some older years) — all packaged as 7-Zip
+- **Projection:** EPSG:2154 (RGF93 / Lambert-93) for metropolitan France. Overseas territories (outre-mer) are published in suitable UTM projections.
+- **License:** [Licence Ouverte / Open Licence](https://etalab.gouv.fr/licence-ouverte-open-licence)
+- **Attribution:** "IGN — Original data from https://geoservices.ign.fr/rpg"
 
 ### Properties
 

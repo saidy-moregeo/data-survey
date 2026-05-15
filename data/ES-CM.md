@@ -1,28 +1,25 @@
-# Spain Castilla la Mancha Crop fields
+# Castilla-La Mancha, Spain
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Castilla-la-Mancha
-- **Homepage:** https://datosabiertos.castillalamancha.es/dataset/sistema-de-informaci%C3%B3n-geogr%C3%A1fica-de-parcelas-agr%C3%ADcolas-de-castilla-la-mancha-sigpac
+- **Data Provider (Legal Entity):** Unidad de Cartografía. Secretaría General. Consejería de Agricultura, Ganadería y Desarrollo Rural. (Government)
+- **Homepage:** https://datosabiertos.castillalamancha.es
 
 ## Overview
 
-SIGPAC is a Geographic Information System dedicated to the control of agricultural aid under 
-the CAP (Common Agricultural Policy). This tool is mandatory for the management of community aid, and is 
-the identification basis for any type of aid related to the surface area.
+SIGPAC (Sistema de Información Geográfica de la Política Agrícola Común, the Geographical Information System for Common Agricultural Policy) is a geographic information system dedicated to the control of agricultural aid under the CAP. This dataset contains the SIGPAC enclosures (Recintos) for the autonomous community of Castilla-La Mancha. The data is exposed through the regional ESRI REST service. The latest year is published under `Vector/Recintos_sigpac`, while earlier years (2018–2024) are exposed as separate `Recintos_sigpac_<YEAR>` services.
 
 ## Data
 
-https://datosabiertos.castillalamancha.es/dataset/sistema-de-informaci%C3%B3n-geogr%C3%A1fica-de-parcelas-agr%C3%ADcolas-de-castilla-la-mancha-sigpac
+- **URL:** https://geoservicios.castillalamancha.es/arcgis/rest/services/Vector (ESRI REST MapServer; layer `Recintos_sigpac` for the current year, `Recintos_sigpac_<YEAR>` for historic years)
+- **Documentation:** https://datosabiertos.castillalamancha.es/dataset/sistema-de-informaci%C3%B3n-geogr%C3%A1fica-de-parcelas-agr%C3%ADcolas-de-castilla-la-mancha-sigpac
+- **File Format:** ESRI REST / FeatureServer JSON (converted to GeoJSON)
+- **Projection:** EPSG:4326 (REST export)
+- **License:** [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) (see [dataset page](https://datosabiertos.castillalamancha.es/dataset/sistema-de-informaci%C3%B3n-geogr%C3%A1fica-de-parcelas-agr%C3%ADcolas-de-castilla-la-mancha-sigpac))
+- **Attribution:** Unidad de Cartografía. Secretaría General. Consejería de Agricultura, Ganadería y Desarrollo Rural.
 
-
-- **URL:** https://datosabiertos.castillalamancha.es/dataset/sistema-de-informaci%C3%B3n-geogr%C3%A1fica-de-parcelas-agr%C3%ADcolas-de-castilla-la-mancha-sigpac
-- **Documentation:** https://datosabiertos.castillalamancha.es/dataset/sistema-de-informaci%C3%B3n-geogr%C3%A1fica-de-parcelas-agr%C3%ADcolas-de-castilla-la-mancha-sigpac-2
-- **File Format:** GeoJSON
-- **Projection:** EPSG:25830
-- **License:** CC-BY-SA-4.0 (see https://datosabiertos.castillalamancha.es/dataset/sistema-de-informaci%C3%B3n-geogr%C3%A1fica-de-parcelas-agr%C3%ADcolas-de-castilla-la-mancha-sigpac)
-- **Attribution:** Unidad de Cartografía. Secretaría General. Consejería de Agricultura , Ganadería y Desarrollo Rural.
+The published surface (`dn_surface`) is in square metres.
 
 ### Properties
 
@@ -76,6 +73,7 @@ Web Viewer: https://datosabiertos.castillalamancha.es/dataset/sistema-de-informa
 
 ## API
 
-| Standard | URL                                                                  | Documentation                        |
-|----------|----------------------------------------------------------------------|--------------------------------------|
-| ESRI     | https://geoservicios.castillalamancha.es/arcgis/rest/services/Vector | Layers Vector/Recintos_sigpac_<YEAR> |
+| Standard  | URL                                                                  | Documentation |
+|-----------|----------------------------------------------------------------------|---------------|
+| ESRI REST | https://geoservicios.castillalamancha.es/arcgis/rest/services/Vector/Recintos_sigpac/MapServer | Latest year |
+| ESRI REST | https://geoservicios.castillalamancha.es/arcgis/rest/services/Vector | Browse `Recintos_sigpac_<YEAR>` for historic years |

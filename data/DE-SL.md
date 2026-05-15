@@ -12,7 +12,7 @@ The Saarland IACS / GIS subsidy application areas ("Antragsschläge") published 
 INSPIRE *Existing Land Use* features. The data covers parcels declared by farmers
 for agricultural-land subsidies. It is served as INSPIRE-compliant GML through a WFS
 endpoint and the FLIK identifier and field size are encoded inside the INSPIRE
-`description` attribute (parsed by the converter using a regular expression).
+`description` attribute.
 
 ## Data
 
@@ -29,7 +29,7 @@ endpoint and the FLIK identifier and field size are encoded inside the INSPIRE
 |-------------|-----------|---------------------------------------------|---------------------------------------------------------|
 | identifier  | string    |                                             | INSPIRE feature identifier                              |
 | description | string    | `flik: DESLLI…`, `Size in ha: …`            | INSPIRE description; encodes FLIK and field size in ha  |
-| flik        | string    | FLIK pattern (FLIK extension)               | Field block identifier (parsed from `description`)      |
+| flik        | string    | FLIK pattern                                | Field block identifier (parsed from `description`)      |
 | area        | number    | hectares (parsed)                           | Field area in hectares (parsed from `description`)      |
 | name        | string    |                                             | Feature label                                           |
 | geometry    | Polygon   | EPSG:4258                                   | Field geometry                                          |

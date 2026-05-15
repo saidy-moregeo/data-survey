@@ -1,31 +1,27 @@
-# Andalucia SIGPAC
+# Andalucía, Spain
 
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Junta de Andalucia - La consejería de Agricultura, Pesca, Agua y Desarollo Rural
-- **Homepage:** https://www.juntadeandalucia.es/organismos/agriculturapescaaguaydesarrollorural.html
+- **Data Provider (Legal Entity):** Junta de Andalucía (Government)
+- **Homepage:** https://www.juntadeandalucia.es
 
 ## Overview
 
-SIGPAC is the Geographic Information System for the Identification of Agricultural Plots , 
-created through collaboration between the Spanish Agricultural Guarantee Fund (FEGA) and 
-the different Autonomous Communities, within the scope of their territories, as an element 
-of the Integrated Management and Control System of the direct aid regimes. It has the character 
-of a public register of administrative profile, and contains updated information on the 
-plots that may benefit from community aid related to the surface area, providing graphic 
-support for these and their subdivisions (ENCLOSURES) with defined agricultural uses or 
-developments.
+The dataset contains the SIGPAC (Sistema de Información Geográfica de Identificación de Parcelas Agrícolas, the Geographical Information System for Common Agricultural Policy) reference enclosures (Recintos) for the autonomous community of Andalucía. SIGPAC was created through collaboration between the Spanish Agricultural Guarantee Fund (FEGA) and the different Autonomous Communities as part of the Integrated Management and Control System for direct CAP aid. It is a public administrative register that contains up-to-date information on the parcels that may benefit from community aid related to the surface area, providing graphic support for these and their subdivisions (enclosures) with defined agricultural uses or developments.
+
+The data is published per campaign year, with the most recent year being 2025 and historic years available back to 2017.
 
 ## Data
 
-- **URL:** https://www.juntadeandalucia.es/organismos/agriculturapescaaguaydesarrollorural/servicios/sigpac/visor/paginas/sigpac-descarga-informacion-geografica-shapes-provincias.html
-- **Documentation:** https://www.juntadeandalucia.es/sites/default/files/inline-files/2024/03/Metadatos_Recintos_Sigpac_2024.pdf
-- **File Format:** Shapefile
-- **Projection:** EPSG:4258
-- **License:** CC-SA-BY-ND / Pursuant to Law 37/2007 of 16 November on the reuse of public sector information and Law 3/2013 of 24 July approving the Statistical and Cartographic Plan of Andalusia 2013-2017, the geographic information of SIGPAC is made available to the public.
-- **License:** https://www.juntadeandalucia.es/organismos/agriculturapescaaguaydesarrollorural/servicios/sigpac/visor/paginas/sigpac-descarga-informacion-geografica-shapes-provincias.html#toc-condiciones-de-uso-para-la-licencia-de-uso-comercial
+- **URL:** https://www.juntadeandalucia.es/organismos/agriculturapescaaguaydesarrollorural/servicios/sigpac/visor/paginas/sigpac-descarga-informacion-geografica-shapes-provincias.html (per-province ZIP archives per campaign year, e.g. `SP25_REC_PROV_{code}.zip` for 2025)
+- **Documentation:** https://www.juntadeandalucia.es/organismos/agriculturapescaaguaydesarrollorural/servicios/sigpac
+- **File Format:** Shapefile (per province, distributed as ZIP)
+- **Projection:** EPSG:4258 (ETRS89 geographic)
+- **License:** Pursuant to Law 37/2007 of 16 November on the reuse of public sector information and Law 3/2013 of 24 July approving the Statistical and Cartographic Plan of Andalusia 2013-2017, the geographic information of SIGPAC is made available to the public. See [conditions of use](https://www.juntadeandalucia.es/organismos/agriculturapescaaguaydesarrollorural/servicios/sigpac/visor/paginas/sigpac-descarga-informacion-geografica-shapes-provincias.html#toc-condiciones-de-uso-para-la-licencia-de-uso-comercial).
 - **Attribution:** ©Junta de Andalucía
+
+Surface (`NU_AREA`) is published in square metres.
 
 ### Properties
 

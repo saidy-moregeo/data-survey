@@ -3,32 +3,24 @@
 ## Submission Details
 
 - **Submitter (Affiliation):** Ivor Bosloper
-- **Data Provider (Legal Entity):** Konferenz der kantonalen Geoinformations- und Katasterstellen
-- **Homepage:** https://www.kgk-cgc.ch/
+- **Data Provider (Legal Entity):** Konferenz der kantonalen Geoinformations- und Katasterstellen (Government — association of cantonal geo-information and cadastral offices)
+- **Homepage:** https://www.kgk-cgc.ch
 
 ## Overview
 
-The cropfields of Switzerland (Nutzungsflächen) are published per administrative subdivision called Canton.
-The [swiss open data portal](http://geodienste.ch/) offers 
-[various ways to access these fields](https://www.geodienste.ch/services/lwb_nutzungsflaechen) .
-
-One can filter on "Verfügbarkeit" == "Frei erhältlich" and select only the open data. That leaves out Cantons AR, NW, OW, VD and LI.
-The downloaded data can be shared with a open_by license. See https://opendata.swiss/de/terms-of-use . 
-
-> Free use. Citing the source is mandatory.
-> 
-> - You may use this dataset for non-commercial purposes.
-> - You may use this dataset for commercial purposes.
-> - A source reference is mandatory (author, title and link to the dataset).
+The crop fields of Switzerland ("Nutzungsflächen") are published per administrative subdivision (Canton) and
+aggregated through the Swiss geoservices portal. Each canton declares the agricultural use of plots used as the
+basis for direct payments under the Swiss agricultural policy (the federal counterpart to the EU CAP).
 
 ## Data
 
-- **URL:** https://www.geodienste.ch/services/lwb_nutzungsflaechen
-- **Documentation:** https://geobasisdaten.ch/detail/818418/
-- **File Format:** gpkg
-- **Projection:** EPSG:2056
-- **License:** Open-BY (https://opendata.swiss/de/terms-of-use)
-- **License documentation:** [Nutzungsbedingungen](https://www.ag.ch/geoportal/geodatenshop/Nutzungsbedingungen.aspx?Typ=NutzungsbedingungenAGIS1)
+- **URL:** Download via https://www.geodienste.ch/services/lwb_nutzungsflaechen . Filter on "Verfügbarkeit" == "Frei erhältlich" to select only the open data (excludes the cantons AR, NW, OW, VD, and LI).
+- **Documentation:** https://www.geodienste.ch/services/lwb_nutzungsflaechen and https://geobasisdaten.ch/detail/818418/
+- **File Format:** GeoPackage
+- **Projection:** EPSG:2056 (CH1903+ / LV95)
+- **License:** [opendata.swiss terms of use](https://opendata.swiss/en/terms-of-use) (open_by — free use with mandatory source citation)
+
+The `ist_ueberlagernd` flag marks overlapping landscape elements that would otherwise duplicate the area.
 
 ### Properties
 
@@ -58,4 +50,4 @@ The downloaded data can be shared with a open_by license. See https://opendata.s
 
 ### Example
 
-An impression (with crop categories) can be seen on the swiss geoportal map: https://s.geo.admin.ch/zoa4b9lok3g8
+An impression (with crop categories) can be seen on the Swiss geoportal map: https://s.geo.admin.ch/zoa4b9lok3g8
