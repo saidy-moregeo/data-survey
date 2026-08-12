@@ -16,7 +16,9 @@ ARKOD parcels are maintained by the Paying Agency in support of the Common Agric
 
 ## Data
 
-- **URL:** https://www.apprrr.hr/wp-content/uploads/nipp/land_parcels.gpkg
+- **URL:** Multiple years of data
+  - Latest version: https://www.apprrr.hr/wp-content/uploads/nipp/land_parcels.gpkg
+  - Archive for 2011-2023: `https://www.apprrr.hr/wp-content/uploads/nipp/arkod_31_12_<YEAR>.gpkg`
 - **Documentation:** https://www.apprrr.hr/prostorni-podaci-servisi/
 - **File Format:** GeoPackage
 - **Projection:** as published
