@@ -56,6 +56,7 @@ The following data has been surveyed:
 - [Sweden](data/SE.md)
 - [Switzerland](data/CH.md)
 - [United Kingdom — UKFields (Fiboa-UK)](data/UK.md)
+- [Lithuania — KŽS](data/LT-KZS)
 
 ### Europe-wide
 
