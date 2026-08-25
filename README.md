@@ -19,6 +19,7 @@ The following data has been surveyed:
 - [Estonia](data/EE.md)
 - [Finland](data/FI.md)
 - [France](data/FR.md)
+- [Bavaria (BY), Germany](data/DE-BY.md)
 - [Berlin / Brandenburg, Germany](data/DE-BB.md)
 - [Mecklenburg-Vorpommern, Germany](data/DE-MV.md)
 - [Lower Saxony, Germany](data/DE-NDS.md)
