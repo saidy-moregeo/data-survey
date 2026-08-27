@@ -19,6 +19,7 @@ The following data has been surveyed:
 - [Estonia](data/EE.md)
 - [Finland](data/FI.md)
 - [France](data/FR.md)
+- [Baden-Württemberg (BW), Germany](data/DE-BW.md)
 - [Berlin / Brandenburg, Germany](data/DE-BB.md)
 - [Hesse (HE), Germany](data/DE-HE.md)
 - [Mecklenburg-Vorpommern, Germany](data/DE-MV.md)
@@ -57,6 +58,7 @@ The following data has been surveyed:
 - [Sweden](data/SE.md)
 - [Switzerland](data/CH.md)
 - [United Kingdom — UKFields (Fiboa-UK)](data/UK.md)
+- [Lithuania — KŽS](data/LT-KZS)
 
 ### Europe-wide
 

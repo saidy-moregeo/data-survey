@@ -43,12 +43,12 @@ Properties of `lawi:LPIS-Referenzparzellen`.
 | `id`                                              | string    | required, unique | Identifier such as `DE.HE.RP.DEHELI0004994212`. The FLIK is the final dot-segment |
 | `agriculturalAreaType`                            | string    | required         | Land use class, as a code (values below)                                        |
 | `agriculturalAreaType_txt`                        | string    | required         | German label for the same class                                                 |
-| `declaredArea`                                    | number    | required         | Declared area **in hectares**, delivered as a JSON string                       |
+| `declaredArea`                                    | number    | required         | Declared area **in hectares**, delivered as a JSON number                       |
 | `declaredArea_uom`                                | string    | `ha`             | Unit of `declaredArea`                                                          |
 | `validFrom` / `validTo`                           | string    | `DD.MM.YYYY`     | Validity period; constant within a year layer, e.g. `01.01.2025` / `31.12.2025` |
 | `beginlifespanversion`                            | string    | `DD.MM.YYYY`     | Date the record version was created                                             |
 | `agriculturalAreaWithinReferenceParcel`           | string    |                  | Identifier of the matching agricultural parcel, e.g. `DE.HE.AA.DEHELI…`         |
-| `landscapeFeaturesAssociatedWithAgriculturalArea` | string    |                  | Associated landscape elements; the literal string `None` in every row sampled   |
+| `landscapeFeaturesAssociatedWithAgriculturalArea` | string    | nillable         | Associated landscape elements; `null` in every row sampled                      |
 | `geometryType`                                    | string    | `GM_Surface`     | Geometry type                                                                   |
 | `geom`                                            | Polygon   | required         | Parcel geometry                                                                 |
 
@@ -80,7 +80,7 @@ One feature, with the coordinate list truncated:
     "validTo": "31.12.2025",
     "agriculturalAreaType": "DK",
     "agriculturalAreaType_txt": "Dauerkultur",
-    "declaredArea": "0.0823108861267345",
+    "declaredArea": 0.0823108861267345,
     "declaredArea_uom": "ha",
     "id": "DE.HE.RP.DEHELI0004994212"
   }
