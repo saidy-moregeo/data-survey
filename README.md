@@ -21,6 +21,7 @@ The following data has been surveyed:
 - [France](data/FR.md)
 - [Baden-Württemberg (BW), Germany](data/DE-BW.md)
 - [Berlin / Brandenburg, Germany](data/DE-BB.md)
+- [Hesse (HE), Germany](data/DE-HE.md)
 - [Mecklenburg-Vorpommern, Germany](data/DE-MV.md)
 - [Lower Saxony, Germany](data/DE-NDS.md)
 - [North Rhine-Westphalia (NRW), Germany](data/DE-NRW.md)
