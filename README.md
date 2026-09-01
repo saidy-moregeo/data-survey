@@ -28,6 +28,7 @@ The following data has been surveyed:
 - [North Rhine-Westphalia (NRW), Germany](data/DE-NRW.md)
 - [Saarland, Germany](data/DE-SL.md)
 - [Saxony, Germany](data/DE-SAX.md)
+- [Saxony-Anhalt (ST), Germany](data/DE-ST.md)
 - [Schleswig-Holstein (SH), Germany](data/DE-SH.md)
 - [Thuringia, Germany](data/DE-TH.md)
 - [Ireland: Geospatial aid application (GSAA) dataset](data/IE.md)
