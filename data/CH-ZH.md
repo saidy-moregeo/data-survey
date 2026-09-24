@@ -15,9 +15,9 @@ canton's file on [geodienste.ch](CH.md).
 
 ## Data
 
-- **URL:** https://maps.zh.ch/wfs/OGDZHWFS (WFS 2.0), layers `ms:ogd-0170_giszhpub_lw_nutzungsflaechen_<year>_f` for 2017 to 2025; a whole year in one request with `COUNT=200000&OUTPUTFORMAT=application/shapefile`
+- **URL:** https://maps.zh.ch/wfs/OGDZHWFS (WFS 2.0), layers `ms:ogd-0170_giszhpub_lw_nutzungsflaechen_<year>_f` for 2017 to 2025; a whole year in one request with `COUNT=200000` (GML 3.2, gzip-compressed on request, 64 MB for 2025)
 - **Documentation:** https://www.geolion.zh.ch/geodatensatz/show?gdsid=170
-- **File Format:** WFS (Shapefile, GeoJSON, GML, CSV output)
+- **File Format:** WFS (GML, GeoJSON, CSV and Shapefile output; the Shapefile, GeoJSON and CSV writer fails intermittently with HTTP 400)
 - **Projection:** EPSG:2056 (CH1903+ / LV95)
 - **License:** [opendata.swiss terms of use, Open use](https://opendata.swiss/terms-of-use#terms_open); [Kanton Zürich terms of use](https://geo.zh.ch/terms-of-use)
 - **Attribution:** Kanton Zürich, Amt für Landschaft und Natur
