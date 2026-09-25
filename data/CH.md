@@ -25,7 +25,8 @@ keep earlier years on their own portals: [Zürich](CH-ZH.md) (2017–2025), [Gen
 BS ships an empty file, its plots are in the BL file. AG, AR, NW, OW, SG, UR and ZH publish on model version 2.0,
 the others on 3.0, with the same columns. The `ist_ueberlagernd` flag marks overlapping landscape elements that
 would otherwise duplicate the area. Cantons that require registration or approval are converted from an exported
-file: `fiboa convert ch_<canton> -i <zip>|geopackage/*.gpkg`.
+file: `fiboa convert ch_<canton> -i "<zip>|geopackage/*.gpkg"`. There is no national converter, as the terms differ
+per canton; a Swiss file is the merge of the canton outputs (`fiboa merge`), each under its canton's terms.
 
 ### Terms of use per canton
 
